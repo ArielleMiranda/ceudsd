@@ -5,7 +5,7 @@
 Let's set up our own user folder. Let's copy the birdstrikes file to our own directory:
 ```
 pwd
-cd
+ls
 cp /home/backup/birdstrikes.csv ./
 ls
 ls -l
@@ -59,8 +59,8 @@ we can do this with 1 command
 head -n 5 birdstrikes.csv | tail -n 1
 ```
 
-### ***Exercise***
-put the 5th line into the 5thline.csv
+### ***Exercise 1***
+Copy the 6th and 7th line of birdstrikes into the myprettypony.csv
 
 ## Filtering
 
@@ -92,51 +92,52 @@ wc birdstrikes.csv
 ```wc -l```
 shows only the line count
 
-### ***Exercise***
+### ***Exercise 2***
 
-* show the word, line and character count of the first 10 lines
-* how many incidents were in California (only output line count)
+Show the word, line and character count of the first 10 lines
+
+### ***Exercise 3***
+
+How many incidents were in California (only output line count)
 
 ## Cutting lines
 
 ```
-cat birdstrikes.csv | cut -d ';' -f5
+cat birdstrikes.csv | cut -d ';' -f5 | head -10
 ```
 
-* `cut` - Display only the *aircraft* and the *flight_date* columns
+* `cut` - Display only 20 rows with *damange* and the *cost* columns
 ```
-cat birdstrikes.csv | cut -d ';' -f2,3
+cat birdstrikes.csv | cut -d ';' -f4,10
 ```
-### ***Exercise***
+### ***Exercise 4***
 
-* Display only the *state* and the *bird size* columns of Airplane accidents
+Write *state* and the *bird size* columns of the 18th line in birdstrikes in file called *onerepublic.csv*. What is the result if run 'cat onerepublic.csv'
 
-`sort` -
-Sort this file
+## Sorting
+
 ```
 sort birdstrikes.csv
 ```
 
-* `sort -k -t` -
-Sort by feet above ground, high values first
+DESC sort by *id*
 ```
-cat birdstrikes.csv | sort -k11 -t ';' -n -r | less
-```
-
-### ***Exercise***
-* Which was the most expensive incident?
-
-`sort | uniq` -
-What kind of bird sizes are there?
-```
-cat birdstrikes.csv | cut -d ';' -f9 | sort | uniq
+cat birdstrikes.csv | sort -k1 -t ';' -n -r
 ```
 
-### ***Exercise***
-In how many states did accidents happen?
+
+### ***Exercise 5***
+What was the cost of the most expensive incident?
+
+
+## Distinct/Unique values
+
+* `sort | uniq` - 
+How many distinct states we have in birdstrikes?
 ```
 cat birdstrikes.csv | cut -d ';' -f6 | sort | uniq | wc -l
 ```
+
 
 * `uniq -c` -
 How many incidents were there by state?
@@ -144,31 +145,40 @@ How many incidents were there by state?
 cat birdstrikes.csv | cut -d ';' -f6 | sort | uniq -c
 ```
 
+
 ## Scripts
 
 * `bash script` - Write a script that gets the first column
 
 ```
-# nano firstcolumn.sh
+# nano myfirstscript.sh
 
-cut -d ';' -f1
+cat birdstrikes.csv | cut -d ';' -f5 | head -3
 
-# chmod a+x firstcolumn.sh
-# cat birdstrikes | ./firstcolumn.sh
+
+# chmod a+x myfirstscript.sh
+# ./myfirstscript.sh
 ```
 
-* `bash` -
-script parameters
+* input parameter and for cycle
+
 ```
-echo $1
-cat
+#!/bin/bash
+
+echo DISPLAY $1x times:
+
+for (( i=1; i<=$1; i++ ))
+do
+  echo $i
+  cat birdstrikes.csv | cut -d ';' -f5 | head -3
+done
+
 ```
 
-## Homework
+## Homework (Optional, no need to submit)
 
-* Print the number of lines in bridstrikes
 * Show the first 3 Helicopter incidents outside of Colorado
 * How many incidents did happen were cost is bigger than 0
 * In which Area did the most expensive incident happen that was caused by a Small bird?
-* Optional - Check (in google) and explain what regular expressions are, and how they could be used with grep. Provide an example on how you would use it with birdstrikes
+
 
