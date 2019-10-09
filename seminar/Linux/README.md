@@ -26,9 +26,9 @@ less birdstrikes.csv
 ```
 
 `head` -
-Print the first 20 lines to the file to the screen
+Print the first 3 lines to the file to the screen
 ```
-head -n 20 birdstrikes.csv
+head -n 3 birdstrikes.csv
 ```
 
 `man` -
@@ -38,9 +38,9 @@ man head
 ```
 
 `tail` -
-Check the last 10 lines of the file
+Check the last 5 lines of the file
 ```
-tail -n 10 birdstrikes.csv
+tail -n 5 birdstrikes.csv
 ```
 
 `>` - Put the first 10 lines into an other file
@@ -48,13 +48,12 @@ tail -n 10 birdstrikes.csv
 head -n 10 birdstrikes.csv > first10.csv
 ```
 
-show the last line of the csv.
+list the result
 ```
-tail -1 first10.csv
+cat first10.csv
 ```
 
-* `|` -
-we can do this with 1 command
+* `|` - concatenating command. Show the 10th line only: 
 ```
 head -n 5 birdstrikes.csv | tail -n 1
 ```
