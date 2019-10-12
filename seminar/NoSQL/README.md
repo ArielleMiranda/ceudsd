@@ -27,55 +27,55 @@ import redis
 r = redis.Redis(host='xxx', port=6379, db=0)
 ```
 
-## SET
+#### SET
 ```
 r.set('foo', 'bar')
 ```
 
-## GET
+#### GET
 ```
 r.get('foo')
 ```
-## OVERWRITE WITH EXPIRATION
+#### OVERWRITE WITH EXPIRATION
 ```
 r.set('foo','bar2',ex=5)
 ```
-## IS IT THERE?
+#### IS IT THERE?
 ```
 r.get('foo')
 ```
 
-## SET A NUMBER
+#### SET A NUMBER
 ```
 r.set("something", 10)
 r.get('something')
 ```
 
-## INCREASE NUMBER VALUE
+#### INCREASE NUMBER VALUE
 ```
 r.incr("something")
 r.get('something')
 ```
 
-## STORE MULTIPLE KEY-VALUE
+#### STORE MULTIPLE KEY-VALUE
 ```
 r.mset({'one': 1, 'two': 2, 'three': 3})
 ```
 
-## DISPLAY ALL KEYS STORED IN DB
+#### DISPLAY ALL KEYS STORED IN DB
 ```
 r.keys()
 ```
 
-## RETRIEVE MULTIPLE VALUES BY KEY 
+### RETRIEVE MULTIPLE VALUES BY KEY 
 ```
 r.mget('one','three')
 ```
-## DELETE A VALUE BY KEY
+#### DELETE A VALUE BY KEY
 ```
 r.delete('three')
 ```
-## CHECK THE EXISTENCE OF A KEY
+#### CHECK THE EXISTENCE OF A KEY
 ```
 r.exists('one')
 ```
