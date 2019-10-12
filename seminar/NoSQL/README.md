@@ -1,9 +1,9 @@
 # NoSQL Exercises
 
-[REDIS](#redis) 
-[INFLUX](#influx)  
-[SOLR](#solr)  
-[NEO4J](#neo4j)  
+[REDIS](#redis)
+[INFLUX](#influx)
+[SOLR](#solr)
+[NEO4J](#neo4j)
 [HOMEWORK](#homework)  
 
 <a name="redis"/>
@@ -23,10 +23,12 @@ import redis
 r = redis.Redis(host='xxx', port=6379, db=0)
 ```
 
+##SET
 ```
 r.set('foo', 'bar')
 ```
 
+##GET
 ```
 r.get('foo')
 ```
