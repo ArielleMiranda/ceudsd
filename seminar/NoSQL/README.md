@@ -1,12 +1,23 @@
 # NoSQL Exercises
 
+[REDIS](#redis) 
 [INFLUX](#influx)  
 [SOLR](#solr)  
 [NEO4J](#neo4j)  
 [HOMEWORK](#homework)  
 
+<a name="redis"/>
+
+## REDIS
 
 <a name="influx"/>
+
+#### Links to help you
+https://redis-py.readthedocs.io/en/latest/index.html
+
+https://redis.io/commands#
+
+
 
 ## INFLUX
 
@@ -17,7 +28,11 @@ https://docs.influxdata.com/influxdb/v1.0/query_language/math_operators/
 
 https://docs.influxdata.com/influxdb/v1.0/query_language/functions/
 
-
+#### Connect to Redis with Python (Use Zeppelin notebook with Python interpreter)
+```
+import redis
+r = redis.Redis(host='r2-001.4phq3b.0001.euw1.cache.amazonaws.com', port=6379, db=0)
+```
 
 #### Schema exploration
 Let’s explore the databases in this Influx DBMS:
