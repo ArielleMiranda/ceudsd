@@ -67,7 +67,7 @@ r.mset({'one': 1, 'two': 2, 'three': 3})
 r.keys()
 ```
 
-### RETRIEVE MULTIPLE VALUES BY KEY 
+#### RETRIEVE MULTIPLE VALUES BY KEY 
 ```
 r.mget('one','three')
 ```
@@ -417,7 +417,7 @@ List the name and degree of the top 10 most connected Officers from Romania.Tell
 <a name="homework"/>
 
 
-# HOMEWORK! (Submit to moodle by 18nd of October 21:00)
+# HOMEWORK (Optional)
 
 Use the datasets configured for each DB and create queries to solve the following tasks:
 
