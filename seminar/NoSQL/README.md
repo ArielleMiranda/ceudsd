@@ -17,6 +17,11 @@ https://redis-py.readthedocs.io/en/latest/index.html
 
 https://redis.io/commands#
 
+#### Connect to Redis with Python (Use Zeppelin notebook with Python interpreter)
+```
+import redis
+r = redis.Redis(host='xxx', port=6379, db=0)
+```
 
 
 ## INFLUX
@@ -28,11 +33,6 @@ https://docs.influxdata.com/influxdb/v1.0/query_language/math_operators/
 
 https://docs.influxdata.com/influxdb/v1.0/query_language/functions/
 
-#### Connect to Redis with Python (Use Zeppelin notebook with Python interpreter)
-```
-import redis
-r = redis.Redis(host='r2-001.4phq3b.0001.euw1.cache.amazonaws.com', port=6379, db=0)
-```
 
 #### Schema exploration
 Let’s explore the databases in this Influx DBMS:
