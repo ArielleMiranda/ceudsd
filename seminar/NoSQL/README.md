@@ -1,7 +1,6 @@
 # NoSQL Exercises
 
 [REDIS](#redis) 
-
 [INFLUX](#influx)  
 [SOLR](#solr)  
 [NEO4J](#neo4j)  
@@ -24,6 +23,44 @@ import redis
 r = redis.Redis(host='xxx', port=6379, db=0)
 ```
 
+```
+r.set('foo', 'bar')
+```
+
+```
+r.get('foo')
+```
+
+```
+r.set('foo','bar2',ex=5)
+```
+```
+r.get('foo')
+```
+
+```
+r.set("something", 10)
+r.get('something')
+```
+```
+r.incr("something")
+r.get('something')
+```
+```
+r.mset({'one': 1, 'two': 2, 'three': 3})
+```
+```
+r.keys()
+```
+```
+r.mget('one','three')
+```
+```
+r.delete('three')
+```
+```
+r.exists('one')
+```
 
 ## INFLUX
 
