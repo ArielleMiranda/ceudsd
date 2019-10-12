@@ -1,6 +1,7 @@
 # NoSQL Exercises
 
 [REDIS](#redis) 
+
 [INFLUX](#influx)  
 [SOLR](#solr)  
 [NEO4J](#neo4j)  
