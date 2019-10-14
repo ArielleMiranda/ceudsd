@@ -4,6 +4,8 @@
 
 [INFLUX](#influx)
 
+[MONGO](#mongo)
+
 [SOLR](#solr)
 
 [NEO4J](#neo4j)
@@ -175,7 +177,82 @@ SELECT STDDEV(water_level) FROM h2o_feet
 SELECT PERCENTILE(water_level,5) FROM h2o_feet WHERE location = 'coyote_creek'
 ```
 
+## MONGO
 
+<a name="mongo"/>
+
+#### Connect to MongoDB with Python (Use Zeppelin notebook with Python interpreter)
+
+```
+import pymongo
+import pprint
+mongo = pymongo.MongoClient("mongodb://xxx:27017")
+```
+#### Select a database and a collection
+
+If database or collection does not exsits, will be created with the first data write (eg. insert line)
+
+```
+db = mongo["mydatabase"]
+customers = db["customers"]
+```
+
+#### List collections stored in the database
+```
+db.list_collection_names()
+```
+
+#### Insert a document
+```
+id = customers.insert_one({ "name": "John", "address": "Boston Highway 37" }).inserted_id
+```
+
+#### Find 
+
+Find the customer inserted by id. Pretty print the result.
+```
+pprint.pprint(customers.find_one({"_id": id}))
+```
+
+Find multiple customers by "name" field. Inverse sort by "address". Limit to 5. In order to print the result we iterating over the result set and pretty print each resulting JSON.
+
+
+```
+for customer in customers.find({"name": "John"}).sort("address",-1).limit(5):
+    pprint.pprint(customer)
+```
+
+#### Count 
+
+```
+customers.count_documents({"name": "John"})
+```
+
+#### Distinct
+
+Find the customers called "John" which address starts with "Boston" and print out distinct addresses.
+
+```
+for customer in customers.find({"name":"John","address": {"$regex": "^Boston"}}).distinct("address"):
+    pprint.pprint(customer)
+```
+
+#### Airbnb Sample database
+```
+airbnb = db["airbnb"]
+pprint.pprint(airbnb.find_one())
+```
+
+#### Advance filtering
+
+Filter by a deeper JSON field. Print only part of JSON.
+
+```
+for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
+    pprint.pprint(listing['address']['government_area'])
+```
+
+#### Exercise: Count how many Airbnb listings we have in the sample database having "country_code" "US" OR "address.market" startwith "M" (Use MongoDB documentation like https://docs.mongodb.com/manual/)
 
 <a name="solr"/>
 
