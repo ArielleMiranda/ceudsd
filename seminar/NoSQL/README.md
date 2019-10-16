@@ -26,7 +26,7 @@ https://redis.io/commands#
 #### Connect to Redis with Python (Use Zeppelin notebook with Python interpreter)
 ```
 import redis
-r = redis.Redis(host='xxx', port=6379, db=0)
+r = redis.Redis(host='dsd-redis.4phq3b.ng.0001.euw1.cache.amazonaws.com', port=6379)
 ```
 
 #### SET
