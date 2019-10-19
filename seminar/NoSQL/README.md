@@ -354,6 +354,122 @@ http://ceudsd.net:8081/solr/dsdcore/select?facet.field=dest&facet.field=hour&fac
 ### ***Exercise 4***
 HOW MANY FLIGHTS HAVE NO ARRIVAL DELAY?
 
+
+
+
+
+
+
+
+
+
+## SOLR2
+
+#### Links to help you
+https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser
+
+http://yonik.com/solr/query-syntax/
+
+
+
+#### Simple queries
+
+SOLR has different connectors to programming languages. For simple query testing, we don’t need to program because SOLR is offering so called HTTP Rest interface. These are basically url calls from a browser.
+
+The simplest query (the result is limited by default to 10):
+```
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:* 
+```
+
+[In SQL would be something like this:
+`SELECT * FROM flightdelays`]
+
+Same query, but now limited to 3 results:
+```
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&rows=2
+```
+
+[In SQL would be something like this:
+`SELECT * FROM flightdelays LIMT 3`]
+
+Same query, but the output is CSV:
+```
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&rows=2&wt=csv
+```
+
+Same as the first query, but requesting only one field of the document (YEAR):
+
+```
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&fl=YEAR
+```
+[In SQL would be something like this:
+`SELECT year FROM flightdelays`]
+
+Same as the first query, but requesting only the fields starting with “D”:
+```
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&fl=D*
+```
+
+Same as the first query, but requesting two fields of the document (YEAR,ORIG_CITY):
+```
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&fl=YEAR,ORIG_CITY
+```
+[In SQL would be something like this:
+`SELECT year,origin FROM flightdelays`]
+
+
+Sort by distance in descending order:
+```
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&rows=5&sort=DISTANCE desc
+```
+
+
+#### Ranges 
+Return the documents where distance is between 0 and 500, show only DISTANCE,ORIG_CITY,DEST_CITY field.
+```
+http://ceudsd.net:8081/solr/flightdelays/select?fl=DISTANCE,ORIG_CITY,DEST_CITY&q=DISTANCE:[0 TO 500]
+```
+
+Return the documents from this last 5 years, show only time_hour field.
+
+```
+http://ceudsd.net:8081/solr/flightdelays/select?fl=DATE&q=DATE:[NOW-10YEARS TO *]
+```
+
+#### Fuzzy
+Show me the tailnums for tail numbers starting with any character, followed by “2”, followed by 2 any character, followed by "jb"
+```
+http://ceudsd.net:8081/solr/flightdelays/select?fl=TAIL_NUMBER&q=TAIL_NUMBER:?2??jb
+```
+
+Show me destination cities (2 distance) close to "balabany"
+```
+http://ceudsd.net:8081/solr/flightdelays/select?fl=DEST_CITY&q=DEST_CITY:balabany~2
+```
+
+#### Facets
+Give me a document list when no filter and return the facets for "dest" and “hour”:
+```
+http://ceudsd.net:8081/solr/flightdelays/select?facet.field=dest&facet.field=hour&facet=on&q=*:*
+```
+
+Give me a document list when no filter and return the facets for "dest" and “hour”:
+```
+http://ceudsd.net:8081/solr/flightdelays/select?facet.field=AIRLINE&facet.field=ORIG_AIRPORT&facet=on&q=*:*
+```
+
+### ***Exercise 4***
+HOW MANY FLIGHTS HAVE NO ARRIVAL DELAY?
+
+
+
+
+
+
+
+
+
+
 <a name="neo4j"/>
 
 ## NEO4J
