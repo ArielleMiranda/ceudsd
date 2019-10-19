@@ -448,14 +448,9 @@ http://ceudsd.net:8081/solr/flightdelays/select?fl=DEST_CITY&q=DEST_CITY:balaban
 ```
 
 #### Facets
-Give me a document list when no filter and return the facets for "dest" and “hour”:
+Give me the flights with TAIL_NUMBER = N928SW and return facets for airline and destination airport:
 ```
-http://ceudsd.net:8081/solr/flightdelays/select?facet.field=dest&facet.field=hour&facet=on&q=*:*
-```
-
-Give me a document list when no filter and return the facets for "dest" and “hour”:
-```
-http://ceudsd.net:8081/solr/flightdelays/select?facet.field=AIRLINE&facet.field=ORIG_AIRPORT&facet=on&q=*:*
+http://ceudsd.net:8081/solr/flightdelays/select?facet.field=AIRLINE_str&facet.field=DEST_AIRPORT_str&facet=on&q=TAIL_NUMBER:N928SW
 ```
 
 ### ***Exercise 4***
