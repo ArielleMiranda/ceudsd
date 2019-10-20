@@ -142,10 +142,10 @@ Let’s try a where clause:
 ```
 SELECT *  FROM h2o_feet WHERE location = 'santa_monica' LIMIT 10
 ```
-### ***Exercise 1***
+### ***INFLUX Exercise 1***
 HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
 
-### ***Exercise 2***
+### ***INFLUX Exercise 2***
 LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
 
 
@@ -155,7 +155,7 @@ MEAN as aggregation function:
 SELECT MEAN(water_level) FROM h2o_feet GROUP BY location 
 ```
 
-### ***Exercise 3***
+### ***INFLUX Exercise 3***
 BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
 
 
@@ -252,7 +252,7 @@ for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
     pprint.pprint(listing['address']['government_area'])
 ```
 
-#### Exercise: Count how many Airbnb listings we have in the sample database having "country_code" "US" OR "address.market" startwith "M" (Use MongoDB documentation like https://docs.mongodb.com/manual/)
+#### MONGO Exercise 1: Count how many Airbnb listings we have in the sample database having "country_code" "US" OR "address.market" startwith "M" (Use MongoDB documentation like https://docs.mongodb.com/manual/)
 
 
 <a name="solr"/>
@@ -354,13 +354,7 @@ Give the record within a circular circle defined by center point of 39.85,-104.6
 http://ceudsd.net:8081/solr/flightdelays/select?d=2&facet.field=DEST_CITY_str&facet.field=ORIG_CITY_str&facet=on&fl=ORIG_CITY&fq={!geofilt}&pt=39.85,-104.66&q=*:*&sfield=ORIG_LOCATION_p
 ```
 
-### ***Exercise 4***
-HOW MANY FLIGHTS HAVE NO ARRIVAL DELAY?
-
-
-
-
-
+#### SOLR Exercise 1: HOW MANY FLIGHTS HAVE NO ARRIVAL DELAY?
 
 
 
@@ -413,17 +407,13 @@ RETURN o
 
 
 
-### ***Exercise 5***
-RETURN THE FIRST 25 ADDRESS NODES
+#### NEO4J Exercise 1: RETURN THE FIRST 25 ADDRESS NODES
 
-### ***Exercise 6***
-HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
+#### NEO4J Exercise 2: HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
 
-### ***Exercise 7***
-RETURN THE FIRST 30 COUNTRIES OF THE ADDRESS NODE
+#### NEO4J Exercise 3: RETURN THE FIRST 30 COUNTRIES OF THE ADDRESS NODE
 
-### ***Exercise 8***
-HOW MANY ADDRESS NODES HAS 'Mexico' OR 'Monaco' IN THEIR ADDRESS PROPERTY?
+#### NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' OR 'Monaco' IN THEIR ADDRESS PROPERTY?
 
 ####  JOINS
 
@@ -459,8 +449,7 @@ MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
 ```
 
-### ***Exercise 9***
-TRANSLATE THIS CYPHER QUERY TO SQL AS CLOSE AS YOU CAN.
+#### NEO4J Exercise 6: TRANSLATE THIS CYPHER QUERY TO SQL AS CLOSE AS YOU CAN.
 ```
 MATCH (n:Officer) WHERE exists(n.countries)
 RETURN n.country_codes, count(*)
@@ -499,8 +488,7 @@ MATCH (a)--()-[r]-()--(a)
 RETURN n as degree, count(DISTINCT r) AS clustering_coefficient
 ```
 
-### ***Exercise 10***
-List the name and degree of the top 10 most connected Officers from Romania.Tell me the no1.
+#### NEO4J Exercise 7: List the name and degree of the top 10 most connected Officers from Romania.Tell me the no1.
 
 
 <a name="homework"/>
