@@ -178,6 +178,11 @@ SELECT PERCENTILE(water_level,5) FROM h2o_feet WHERE location = 'coyote_creek'
 
 <a name="mongo"/>
 
+#### Links to help you
+
+https://docs.mongodb.com/manual/
+https://www.w3schools.com/python/python_mongodb_getstarted.asp
+
 #### Connect to MongoDB with Python (Use Zeppelin notebook with Python interpreter)
 
 ```
@@ -249,7 +254,7 @@ for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
     pprint.pprint(listing['address']['government_area'])
 ```
 
-### MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION LIKE https://docs.mongodb.com/manual/)
+### MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION)
 
 <a name="solr"/>
 
