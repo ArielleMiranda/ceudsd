@@ -254,7 +254,7 @@ for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
     pprint.pprint(listing['address']['government_area'])
 ```
 
-### MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION)
+### *** MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION)
 
 <a name="solr"/>
 
@@ -355,7 +355,7 @@ Give the record within a circular circle defined by center point of 39.85,-104.6
 http://ceudsd.net:8081/solr/flightdelays/select?d=2&facet.field=DEST_CITY_str&facet.field=ORIG_CITY_str&facet=on&fl=ORIG_CITY&fq={!geofilt}&pt=39.85,-104.66&q=*:*&sfield=ORIG_LOCATION_p
 ```
 
-### SOLR Exercise 1: HOW MANY FLIGHTS ARRIVED IN SAN FRANCISCO WITH NO DELAY ALTHOUGH THEY DEPARTED AT LEAST 50 MINS BEHIND THE SCHEDULE?
+### *** SOLR Exercise 1: HOW MANY FLIGHTS ARRIVED IN SAN FRANCISCO WITH NO DELAY ALTHOUGH THEY DEPARTED AT LEAST 50 MINS BEHIND THE SCHEDULE?
 
 
 
@@ -408,13 +408,13 @@ RETURN o
 
 
 
-### NEO4J Exercise 1: RETURN THE FIRST 10 ADDRESS NODES
+### *** NEO4J Exercise 1: RETURN THE FIRST 10 ADDRESS NODES
 
-### NEO4J Exercise 2: HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
+### *** NEO4J Exercise 2: HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
 
-### NEO4J Exercise 3: RETURN THE FIRST 10 COUNTRIES OF THE ADDRESS NODE. WHAT IS THE LAST COUNTRY IN THE LIST?
+### *** NEO4J Exercise 3: RETURN THE FIRST 10 COUNTRIES OF THE ADDRESS NODE. WHAT IS THE LAST COUNTRY IN THE LIST?
 
-### NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' AND 'Monaco' IN THEIR ADDRESS PROPERTY?
+### *** NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' AND 'Monaco' IN THEIR ADDRESS PROPERTY?
 
 ####  Joins
 
@@ -469,7 +469,7 @@ ORDER BY count(*) DESC
 LIMIT 10
 ```
 
-### NEO4J Exercise 5: List the name and number connections of the top 10 most connected Officers from Bulgaria.Who is the no1.
+### *** NEO4J Exercise 5: List the name and number connections of the top 10 most connected Officers from Bulgaria.Who is the no1.
 
 
 #### Node analytics
