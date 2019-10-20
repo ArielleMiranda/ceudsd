@@ -254,116 +254,10 @@ for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
 
 #### Exercise: Count how many Airbnb listings we have in the sample database having "country_code" "US" OR "address.market" startwith "M" (Use MongoDB documentation like https://docs.mongodb.com/manual/)
 
+
 <a name="solr"/>
 
 ## SOLR
-
-#### Links to help you
-https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser
-
-http://yonik.com/solr/query-syntax/
-
-
-
-#### Simple queries
-
-SOLR has different connectors to programming languages. For simple query testing, we don’t need to program because SOLR is offering so called HTTP Rest interface. These are basically url calls from a browser.
-
-The simplest query (the result is limited by default to 10):
-```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:* 
-```
-
-[In SQL would be something like this:
-`SELECT * FROM nycflights`]
-
-Same query, but now limited to 3 results:
-```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&rows=3
-```
-
-[In SQL would be something like this:
-`SELECT * FROM nycflights LIMT 3`]
-
-Same query, but the output is CSV:
-```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&rows=3&wt=csv
-```
-
-Same as the first query, but requesting only one field of the document (year):
-
-```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&fl=year
-```
-[In SQL would be something like this:
-`SELECT year FROM nycflights`]
-
-Same as the first query, but requesting only the fields starting with “d”:
-```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&fl=d*
-```
-
-Same as the first query, but requesting two fields of the document (year,origin):
-```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&fl=year,origin
-```
-[In SQL would be something like this:
-`SELECT year,origin FROM nycflights`]
-
-
-Sort by distance in descending order:
-```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&rows=5&sort=distance desc
-```
-
-
-#### Ranges 
-Return the documents where hour is between 0 and 6, show only hour field.
-```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=hour&q=hour:[0 TO 6]
-```
-
-Return the documents from this last 5 years, show only time_hour field.
-
-```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=time_hour&q=time_hour:[NOW-5YEARS TO *]
-```
-
-#### Fuzzy
-Show me the tailnums for tail numbers starting with any character, followed by “2”, followed by 2 any character, followed by "jb"
-```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=tailnum&q=tailnum:?2??jb
-```
-
-Show me destinations where the destination contains “ac” anywhere: 
-```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=dest&q=dest:ac~1
-```
-
-#### Facets
-Give me a document list when no filter and return the facets for "dest" and “hour”:
-```
-http://ceudsd.net:8081/solr/dsdcore/select?facet.field=dest&facet.field=hour&facet=on&q=*:*
-```
-
-Give me a document list when no filter and return the facets for "dest" and “hour”:
-```
-http://ceudsd.net:8081/solr/dsdcore/select?facet.field=dest&facet.field=hour&facet=on&q=origin:JFK
-```
-
-### ***Exercise 4***
-HOW MANY FLIGHTS HAVE NO ARRIVAL DELAY?
-
-
-
-
-
-
-
-
-
-
-## SOLR2
 
 #### Links to help you
 https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser
@@ -451,6 +345,13 @@ http://ceudsd.net:8081/solr/flightdelays/select?fl=DEST_CITY&q=DEST_CITY:balaban
 Give me the flights with TAIL_NUMBER = N928SW and return facets for airline and destination airport:
 ```
 http://ceudsd.net:8081/solr/flightdelays/select?facet.field=AIRLINE_str&facet.field=DEST_AIRPORT_str&facet=on&q=TAIL_NUMBER:N928SW
+```
+
+### GEO SPACIAL SEARCH
+Give the record within a circular circle defined by center point of 39.85,-104.66 [lat,lon] and diameter of 2 kilometer. Display only ORIG_CITY in the result set and facests for DEST_CITY_str,ORIG_CITY_str.
+
+```
+http://ceudsd.net:8081/solr/flightdelays/select?d=2&facet.field=DEST_CITY_str&facet.field=ORIG_CITY_str&facet=on&fl=ORIG_CITY&fq={!geofilt}&pt=39.85,-104.66&q=*:*&sfield=ORIG_LOCATION_p
 ```
 
 ### ***Exercise 4***
