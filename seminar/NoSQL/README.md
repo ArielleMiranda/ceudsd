@@ -142,9 +142,9 @@ Let’s try a where clause:
 ```
 SELECT *  FROM h2o_feet WHERE location = 'santa_monica' LIMIT 10
 ```
-### INFLUX Exercise 1: HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
+### *** INFLUX Exercise 1: HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
 
-### INFLUX Exercise 2: LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
+### *** INFLUX Exercise 2: LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
 
 
 MEAN as aggregation function:
@@ -153,7 +153,7 @@ MEAN as aggregation function:
 SELECT MEAN(water_level) FROM h2o_feet GROUP BY location 
 ```
 
-### INFLUX Exercise 3: BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
+### *** INFLUX Exercise 3: BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
 
 
 #### Advanced Data Exploration
