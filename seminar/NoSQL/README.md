@@ -142,9 +142,9 @@ Let’s try a where clause:
 ```
 SELECT *  FROM h2o_feet WHERE location = 'santa_monica' LIMIT 10
 ```
-#### INFLUX Exercise 1: HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
+### INFLUX Exercise 1: HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
 
-#### INFLUX Exercise 2: LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
+### INFLUX Exercise 2: LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
 
 
 MEAN as aggregation function:
@@ -153,7 +153,7 @@ MEAN as aggregation function:
 SELECT MEAN(water_level) FROM h2o_feet GROUP BY location 
 ```
 
-#### INFLUX Exercise 3: BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
+### INFLUX Exercise 3: BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
 
 
 #### Advanced Data Exploration
@@ -249,7 +249,7 @@ for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
     pprint.pprint(listing['address']['government_area'])
 ```
 
-#### MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION LIKE https://docs.mongodb.com/manual/)
+### MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION LIKE https://docs.mongodb.com/manual/)
 
 <a name="solr"/>
 
@@ -343,7 +343,7 @@ Give me the flights with TAIL_NUMBER = N928SW and return facets for airline and 
 http://ceudsd.net:8081/solr/flightdelays/select?facet.field=AIRLINE_str&facet.field=DEST_AIRPORT_str&facet=on&q=TAIL_NUMBER:N928SW
 ```
 
-### GEO SPACIAL SEARCH
+#### GEO SPACIAL SEARCH
 Give the record within a circular circle defined by center point of 39.85,-104.66 [lat,lon] and diameter of 2 kilometer. Display only ORIG_CITY in the result set and facests for DEST_CITY_str,ORIG_CITY_str.
 
 ```
@@ -403,13 +403,13 @@ RETURN o
 
 
 
-#### NEO4J Exercise 1: RETURN THE FIRST 25 ADDRESS NODES
+### NEO4J Exercise 1: RETURN THE FIRST 25 ADDRESS NODES
 
-#### NEO4J Exercise 2: HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
+### NEO4J Exercise 2: HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
 
-#### NEO4J Exercise 3: RETURN THE FIRST 30 COUNTRIES OF THE ADDRESS NODE
+### NEO4J Exercise 3: RETURN THE FIRST 30 COUNTRIES OF THE ADDRESS NODE
 
-#### NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' OR 'Monaco' IN THEIR ADDRESS PROPERTY?
+### NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' OR 'Monaco' IN THEIR ADDRESS PROPERTY?
 
 ####  JOINS
 
@@ -445,7 +445,7 @@ MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
 ```
 
-#### NEO4J Exercise 6: TRANSLATE THIS CYPHER QUERY TO SQL AS CLOSE AS YOU CAN.
+### NEO4J Exercise 5: TRANSLATE THIS CYPHER QUERY TO SQL AS CLOSE AS YOU CAN.
 ```
 MATCH (n:Officer) WHERE exists(n.countries)
 RETURN n.country_codes, count(*)
@@ -484,7 +484,7 @@ MATCH (a)--()-[r]-()--(a)
 RETURN n as degree, count(DISTINCT r) AS clustering_coefficient
 ```
 
-#### NEO4J Exercise 7: List the name and degree of the top 10 most connected Officers from Romania.Tell me the no1.
+### NEO4J Exercise 6: List the name and degree of the top 10 most connected Officers from Romania.Tell me the no1.
 
 
 <a name="homework"/>
