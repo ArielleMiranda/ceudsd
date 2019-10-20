@@ -454,6 +454,7 @@ WHERE toLower(o.name) CONTAINS "aliyev"
 MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
 ```
+####  Count
 
 Which country has the most addresses 
 ```
