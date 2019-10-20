@@ -187,7 +187,7 @@ mongo = pymongo.MongoClient("mongodb://xxx:27017")
 ```
 #### Select a database and a collection
 
-If database or collection does not exsits, will be created with the first data write (eg. insert line)
+If database or collection does not exist, will be created with the first data write (eg. insert line)
 
 ```
 db = mongo["mydatabase"]
