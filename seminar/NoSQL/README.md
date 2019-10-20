@@ -455,11 +455,11 @@ MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
 ```
 
-Which country has the most connections 
+Which country has the most addresses 
 ```
-MATCH (n:Officer) 
-RETURN n.country_codes, count(*)
-ORDER BY count(*) DESC
+MATCH (n:Address) 
+RETURN n.countries, count(*)
+ORDER BY count(*)DESC
 LIMIT 10
 ```
 
