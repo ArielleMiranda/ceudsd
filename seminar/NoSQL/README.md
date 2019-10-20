@@ -459,7 +459,7 @@ Which country has the most addresses
 ```
 MATCH (n:Address) 
 RETURN n.countries, count(*)
-ORDER BY count(*)DESC
+ORDER BY count(*) DESC
 LIMIT 10
 ```
 
