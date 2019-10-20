@@ -350,7 +350,7 @@ Give the record within a circular circle defined by center point of 39.85,-104.6
 http://ceudsd.net:8081/solr/flightdelays/select?d=2&facet.field=DEST_CITY_str&facet.field=ORIG_CITY_str&facet=on&fl=ORIG_CITY&fq={!geofilt}&pt=39.85,-104.66&q=*:*&sfield=ORIG_LOCATION_p
 ```
 
-### SOLR Exercise 1: HOW MANY FLIGHTS WITH NO ARRIVAL DELAY DEPARTED 1 HOUR OR LATER?
+### SOLR Exercise 1: HOW MANY FLIGHTS FROM SAN FRANCISCO ARRIVED WITH NO DELAY ALTOUGH THEY DEPARTED 50 MINS BEHIND THE SCHEDULE?
 
 
 
