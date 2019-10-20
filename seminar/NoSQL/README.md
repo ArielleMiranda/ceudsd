@@ -29,55 +29,55 @@ import redis
 r = redis.Redis(host='dsd-redis.4phq3b.ng.0001.euw1.cache.amazonaws.com', port=6379)
 ```
 
-#### SET
+#### Set a value with a key
 ```
 r.set('foo', 'bar')
 ```
 
-#### GET
+#### Get value by key
 ```
 r.get('foo')
 ```
-#### OVERWRITE WITH EXPIRATION
+#### Overwrite with expiration
 ```
 r.set('foo','bar2',ex=5)
 ```
-#### IS IT THERE?
+#### Is it there?
 ```
 r.get('foo')
 ```
 
-#### SET A NUMBER
+#### Set a number
 ```
 r.set("something", 10)
 r.get('something')
 ```
 
-#### INCREASE NUMBER VALUE
+#### Increase number value
 ```
 r.incr("something")
 r.get('something')
 ```
 
-#### STORE MULTIPLE KEY-VALUE
+#### Store multiple key-value
 ```
 r.mset({'one': 1, 'two': 2, 'three': 3})
 ```
 
-#### DISPLAY ALL KEYS STORED IN DB
+#### Display all keys stored in DB
 ```
 r.keys()
 ```
 
-#### RETRIEVE MULTIPLE VALUES BY KEY 
+#### Retrieve multiple values by key
 ```
 r.mget('one','three')
 ```
-#### DELETE A VALUE BY KEY
+#### Delete a value by key
 ```
 r.delete('three')
 ```
-#### CHECK THE EXISTENCE OF A KEY
+#### Check the existence of a key
 ```
 r.exists('one')
 ```
@@ -348,7 +348,7 @@ Give me the flights with TAIL_NUMBER = N928SW and return facets for airline and 
 http://ceudsd.net:8081/solr/flightdelays/select?facet.field=AIRLINE_str&facet.field=DEST_AIRPORT_str&facet=on&q=TAIL_NUMBER:N928SW
 ```
 
-#### GEO SPACIAL SEARCH
+#### Geo spacial search
 Give the record within a circular circle defined by center point of 39.85,-104.66 [lat,lon] and diameter of 2 kilometer. Display only ORIG_CITY in the result set and facests for DEST_CITY_str,ORIG_CITY_str.
 
 ```
@@ -416,7 +416,7 @@ RETURN o
 
 ### NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' AND 'Monaco' IN THEIR ADDRESS PROPERTY?
 
-####  JOINS
+####  Joins
 
 Find the Officers and the Entities linked to them (double MATCH, )
 
