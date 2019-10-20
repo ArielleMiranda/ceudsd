@@ -403,22 +403,23 @@ RETURN o
 
 
 
-### NEO4J Exercise 1: RETURN THE FIRST 25 ADDRESS NODES
+### NEO4J Exercise 1: RETURN THE FIRST 10 ADDRESS NODES
 
 ### NEO4J Exercise 2: HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
 
-### NEO4J Exercise 3: RETURN THE FIRST 30 COUNTRIES OF THE ADDRESS NODE
+### NEO4J Exercise 3: RETURN THE FIRST 10 COUNTRIES OF THE ADDRESS NODE. WHAT IS THE LAST COUNTRY IN THE LIST?
 
 ### NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' OR 'Monaco' IN THEIR ADDRESS PROPERTY?
 
 ####  JOINS
 
-Find joint/linked entities with double MATCH, find the officers from Hungary and the Entities linked to them:
+Find the Officers and the Entities linked to them (double MATCH, )
+
 ```
 MATCH (o:Officer) 
-WHERE o.countries CONTAINS 'Hungary'
 MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
+LIMIT 10
 ```
 
 [In SQL would be something like this:
@@ -429,12 +430,21 @@ USING (relationship)
 `
 ]
 
+Find joint/linked entities with double MATCH, find the officers from Hungary and the Entities linked to them:
+```
+MATCH (o:Officer) 
+WHERE o.countries CONTAINS 'Hungary'
+MATCH (o)-[r]-(c:Entity)
+RETURN o,r,c
+```
+
+
 A variation of the previous one, but here the link type is specified:
 ```
 MATCH (o:Officer) 
 WHERE o.countries CONTAINS 'Hungary'
-MATCH (o)-[:DIRECTOR_OF]-(c:Entity)
-RETURN o,c
+MATCH (o)-[r:DIRECTOR_OF]-(c:Entity)
+RETURN o,r,c
 ```
 
 Find the Officers called "aliyev" and Entities related to them:
@@ -445,14 +455,16 @@ MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
 ```
 
-### NEO4J Exercise 5: TRANSLATE THIS CYPHER QUERY TO SQL AS CLOSE AS YOU CAN.
+Which country has the most connections 
 ```
-MATCH (n:Officer) WHERE exists(n.countries)
+MATCH (n:Officer) 
 RETURN n.country_codes, count(*)
 ORDER BY count(*) DESC
 LIMIT 10
 ```
-What the previous query is returning?
+
+### NEO4J Exercise 5: List the name and number connections of the top 10 most connected Officers from Bulgaria.Who is the no1.
+
 
 #### Node analytics
 
@@ -484,7 +496,6 @@ MATCH (a)--()-[r]-()--(a)
 RETURN n as degree, count(DISTINCT r) AS clustering_coefficient
 ```
 
-### NEO4J Exercise 6: List the name and degree of the top 10 most connected Officers from Romania.Tell me the no1.
 
 
 <a name="homework"/>
