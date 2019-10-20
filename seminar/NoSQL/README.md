@@ -14,7 +14,7 @@
 
 <a name="redis"/>
 
-## REDIS
+# REDIS
 
 <a name="influx"/>
 
@@ -82,7 +82,7 @@ r.delete('three')
 r.exists('one')
 ```
 
-## INFLUX
+# INFLUX
 
 #### Links to help you
 https://docs.influxdata.com/influxdb/v1.0/query_language/data_exploration/
@@ -174,7 +174,7 @@ SELECT STDDEV(water_level) FROM h2o_feet
 SELECT PERCENTILE(water_level,5) FROM h2o_feet WHERE location = 'coyote_creek'
 ```
 
-## MONGO
+# MONGO
 
 <a name="mongo"/>
 
@@ -258,7 +258,7 @@ for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
 
 <a name="solr"/>
 
-## SOLR
+# SOLR
 
 #### Links to help you
 https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser
@@ -363,7 +363,7 @@ http://ceudsd.net:8081/solr/flightdelays/select?d=2&facet.field=DEST_CITY_str&fa
 
 <a name="neo4j"/>
 
-## NEO4J
+# NEO4J
 
 #### Links to help you
 
