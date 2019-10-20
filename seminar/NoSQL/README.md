@@ -142,11 +142,9 @@ Let’s try a where clause:
 ```
 SELECT *  FROM h2o_feet WHERE location = 'santa_monica' LIMIT 10
 ```
-### ***INFLUX Exercise 1***
-HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
+#### INFLUX Exercise 1: HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
 
-### ***INFLUX Exercise 2***
-LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
+#### INFLUX Exercise 2: LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
 
 
 MEAN as aggregation function:
@@ -155,8 +153,7 @@ MEAN as aggregation function:
 SELECT MEAN(water_level) FROM h2o_feet GROUP BY location 
 ```
 
-### ***INFLUX Exercise 3***
-BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
+#### INFLUX Exercise 3: BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
 
 
 #### Advanced Data Exploration
@@ -252,8 +249,7 @@ for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
     pprint.pprint(listing['address']['government_area'])
 ```
 
-#### MONGO Exercise 1: Count how many Airbnb listings we have in the sample database having "country_code" "US" OR "address.market" startwith "M" (Use MongoDB documentation like https://docs.mongodb.com/manual/)
-
+#### MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION LIKE https://docs.mongodb.com/manual/)
 
 <a name="solr"/>
 
