@@ -1,14 +1,88 @@
 # NoSQL Exercises
 
-[INFLUX](#influx)  
-[SOLR](#solr)  
-[NEO4J](#neo4j)  
+[REDIS](#redis)
+
+[INFLUX](#influx)
+
+[MONGO](#mongo)
+
+[SOLR](#solr)
+
+[NEO4J](#neo4j)
+
 [HOMEWORK](#homework)  
 
+<a name="redis"/>
+
+# REDIS
 
 <a name="influx"/>
 
-## INFLUX
+#### Links to help you
+https://redis-py.readthedocs.io/en/latest/index.html
+
+https://redis.io/commands#
+
+#### Connect to Redis with Python (Use Zeppelin notebook with Python interpreter)
+```
+import redis
+r = redis.Redis(host='dsd-redis.4phq3b.ng.0001.euw1.cache.amazonaws.com', port=6379)
+```
+
+#### Set a value with a key
+```
+r.set('foo', 'bar')
+```
+
+#### Get value by key
+```
+r.get('foo')
+```
+#### Overwrite with expiration
+```
+r.set('foo','bar2',ex=5)
+```
+#### Is it there?
+```
+r.get('foo')
+```
+
+#### Set a number
+```
+r.set("something", 10)
+r.get('something')
+```
+
+#### Increase number value
+```
+r.incr("something")
+r.get('something')
+```
+
+#### Store multiple key-value
+```
+r.mset({'one': 1, 'two': 2, 'three': 3})
+```
+
+#### Display all keys stored in DB
+```
+r.keys()
+```
+
+#### Retrieve multiple values by key
+```
+r.mget('one','three')
+```
+#### Delete a value by key
+```
+r.delete('three')
+```
+#### Check the existence of a key
+```
+r.exists('one')
+```
+
+# INFLUX
 
 #### Links to help you
 https://docs.influxdata.com/influxdb/v1.0/query_language/data_exploration/
@@ -16,7 +90,6 @@ https://docs.influxdata.com/influxdb/v1.0/query_language/data_exploration/
 https://docs.influxdata.com/influxdb/v1.0/query_language/math_operators/
 
 https://docs.influxdata.com/influxdb/v1.0/query_language/functions/
-
 
 
 #### Schema exploration
@@ -69,11 +142,9 @@ Let’s try a where clause:
 ```
 SELECT *  FROM h2o_feet WHERE location = 'santa_monica' LIMIT 10
 ```
-### ***Exercise 1***
-HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
+#### *** INFLUX Exercise 1: HOW MANY “DEGREE” MEASUREMENT POINTS WE HAVE IN H2O_TEMPERATURE?
 
-### ***Exercise 2***
-LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
+#### *** INFLUX Exercise 2: LIST THE DISTINCT LEVEL DESCRIPTORS FOR H2O_FEET?
 
 
 MEAN as aggregation function:
@@ -82,8 +153,7 @@ MEAN as aggregation function:
 SELECT MEAN(water_level) FROM h2o_feet GROUP BY location 
 ```
 
-### ***Exercise 3***
-BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
+#### *** INFLUX Exercise 3: BETWEEN 2015-08-19 AND 2015-08-27 HOW MANY DAILY H2O_FEET MEASUREMENTS WERE DONE IN 'coyote_creek'
 
 
 #### Advanced Data Exploration
@@ -104,11 +174,91 @@ SELECT STDDEV(water_level) FROM h2o_feet
 SELECT PERCENTILE(water_level,5) FROM h2o_feet WHERE location = 'coyote_creek'
 ```
 
+# MONGO
 
+<a name="mongo"/>
+
+#### Links to help you
+
+https://docs.mongodb.com/manual/
+https://www.w3schools.com/python/python_mongodb_getstarted.asp
+
+#### Connect to MongoDB with Python (Use Zeppelin notebook with Python interpreter)
+
+```
+import pymongo
+import pprint
+mongo = pymongo.MongoClient("mongodb://xxx:27017")
+```
+#### Select a database and a collection
+
+If database or collection does not exist, will be created with the first data write (eg. insert line)
+
+```
+db = mongo["mydatabase"]
+customers = db["customers"]
+```
+
+#### List collections stored in the database
+```
+db.list_collection_names()
+```
+
+#### Insert a document
+```
+id = customers.insert_one({ "name": "John", "address": "Boston Highway 37" }).inserted_id
+```
+
+#### Find 
+
+Find the customer inserted by id. Pretty print the result.
+```
+pprint.pprint(customers.find_one({"_id": id}))
+```
+
+Find multiple customers by "name" field. Inverse sort by "address". Limit to 5. In order to print the result we iterating over the result set and pretty print each resulting JSON.
+
+
+```
+for customer in customers.find({"name": "John"}).sort("address",-1).limit(5):
+    pprint.pprint(customer)
+```
+
+#### Count 
+
+```
+customers.count_documents({"name": "John"})
+```
+
+#### Distinct
+
+Find the customers called "John" which address starts with "Boston" and print out distinct addresses.
+
+```
+for customer in customers.find({"name":"John","address": {"$regex": "^Boston"}}).distinct("address"):
+    pprint.pprint(customer)
+```
+
+#### Airbnb Sample database
+```
+airbnb = db["airbnb"]
+pprint.pprint(airbnb.find_one())
+```
+
+#### Advance filtering
+
+Filter by a deeper JSON field. Print only part of JSON.
+
+```
+for listing in airbnb.find({ "address.country": "Spain" }).limit(10):
+    pprint.pprint(listing['address']['government_area'])
+```
+
+#### *** MONGO Exercise 1: COUNT HOW MANY AIRBNB LISTINGS WE HAVE IN THE SAMPLE DATABASE HAVING "COUNTRY_CODE" "US" OR "ADDRESS.MARKET" STARTWITH "M" (USE MONGODB DOCUMENTATION)
 
 <a name="solr"/>
 
-## SOLR
+# SOLR
 
 #### Links to help you
 https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser
@@ -123,92 +273,97 @@ SOLR has different connectors to programming languages. For simple query testing
 
 The simplest query (the result is limited by default to 10):
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:* 
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:* 
 ```
 
 [In SQL would be something like this:
-`SELECT * FROM nycflights`]
+`SELECT * FROM flightdelays`]
 
 Same query, but now limited to 3 results:
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&rows=3
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&rows=2
 ```
 
 [In SQL would be something like this:
-`SELECT * FROM nycflights LIMT 3`]
+`SELECT * FROM flightdelays LIMT 3`]
 
 Same query, but the output is CSV:
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&rows=3&wt=csv
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&rows=2&wt=csv
 ```
 
-Same as the first query, but requesting only one field of the document (year):
+Same as the first query, but requesting only one field of the document (YEAR):
 
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&fl=year
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&fl=YEAR
 ```
 [In SQL would be something like this:
-`SELECT year FROM nycflights`]
+`SELECT year FROM flightdelays`]
 
-Same as the first query, but requesting only the fields starting with “d”:
+Same as the first query, but requesting only the fields starting with “D”:
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&fl=d*
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&fl=D*
 ```
 
-Same as the first query, but requesting two fields of the document (year,origin):
+Same as the first query, but requesting two fields of the document (YEAR,ORIG_CITY):
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&fl=year,origin
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&fl=YEAR,ORIG_CITY
 ```
 [In SQL would be something like this:
-`SELECT year,origin FROM nycflights`]
+`SELECT year,origin FROM flightdelays`]
 
 
 Sort by distance in descending order:
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?q=*:*&rows=5&sort=distance desc
+http://ceudsd.net:8081/solr/flightdelays/select?q=*:*&rows=5&sort=DISTANCE desc
 ```
 
 
 #### Ranges 
-Return the documents where hour is between 0 and 6, show only hour field.
+Return the documents where distance is between 0 and 500, show only DISTANCE,ORIG_CITY,DEST_CITY field.
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=hour&q=hour:[0 TO 6]
+http://ceudsd.net:8081/solr/flightdelays/select?fl=DISTANCE,ORIG_CITY,DEST_CITY&q=DISTANCE:[0 TO 500]
 ```
 
 Return the documents from this last 5 years, show only time_hour field.
 
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=time_hour&q=time_hour:[NOW-5YEARS TO *]
+http://ceudsd.net:8081/solr/flightdelays/select?fl=DATE&q=DATE:[NOW-10YEARS TO *]
 ```
 
 #### Fuzzy
 Show me the tailnums for tail numbers starting with any character, followed by “2”, followed by 2 any character, followed by "jb"
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=tailnum&q=tailnum:?2??jb
+http://ceudsd.net:8081/solr/flightdelays/select?fl=TAIL_NUMBER&q=TAIL_NUMBER:?2??jb
 ```
 
-Show me destinations where the destination contains “ac” anywhere: 
+Show me destination cities (2 distance) close to "balabany"
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?fl=dest&q=dest:ac~1
+http://ceudsd.net:8081/solr/flightdelays/select?fl=DEST_CITY&q=DEST_CITY:balabany~2
 ```
 
 #### Facets
-Give me a document list when no filter and return the facets for "dest" and “hour”:
+Give me the flights with TAIL_NUMBER = N928SW and return facets for airline and destination airport:
 ```
-http://ceudsd.net:8081/solr/dsdcore/select?facet.field=dest&facet.field=hour&facet=on&q=*:*
-```
-
-Give me a document list when no filter and return the facets for "dest" and “hour”:
-```
-http://ceudsd.net:8081/solr/dsdcore/select?facet.field=dest&facet.field=hour&facet=on&q=origin:JFK
+http://ceudsd.net:8081/solr/flightdelays/select?facet.field=AIRLINE_str&facet.field=DEST_AIRPORT_str&facet=on&q=TAIL_NUMBER:N928SW
 ```
 
-### ***Exercise 4***
-HOW MANY FLIGHTS HAVE NO ARRIVAL DELAY?
+#### Geo spacial search
+Give the record within a circular circle defined by center point of 39.85,-104.66 [lat,lon] and diameter of 2 kilometer. Display only ORIG_CITY in the result set and facests for DEST_CITY_str,ORIG_CITY_str.
+
+```
+http://ceudsd.net:8081/solr/flightdelays/select?d=2&facet.field=DEST_CITY_str&facet.field=ORIG_CITY_str&facet=on&fl=ORIG_CITY&fq={!geofilt}&pt=39.85,-104.66&q=*:*&sfield=ORIG_LOCATION_p
+```
+
+#### *** SOLR Exercise 1: HOW MANY FLIGHTS ARRIVED IN SAN FRANCISCO WITH NO DELAY ALTHOUGH THEY DEPARTED AT LEAST 50 MINS BEHIND THE SCHEDULE?
+
+
+
+
 
 <a name="neo4j"/>
 
-## NEO4J
+# NEO4J
 
 #### Links to help you
 
@@ -253,26 +408,23 @@ RETURN o
 
 
 
-### ***Exercise 5***
-RETURN THE FIRST 25 ADDRESS NODES
+#### *** NEO4J Exercise 1: RETURN THE FIRST 10 ADDRESS NODES
 
-### ***Exercise 6***
-HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
+#### *** NEO4J Exercise 2: HOW MANY PROPERTIES AN ADDRESS NODE HAS? 
 
-### ***Exercise 7***
-RETURN THE FIRST 30 COUNTRIES OF THE ADDRESS NODE
+#### *** NEO4J Exercise 3: RETURN THE FIRST 10 COUNTRIES OF THE ADDRESS NODE. WHAT IS THE LAST COUNTRY IN THE LIST?
 
-### ***Exercise 8***
-HOW MANY ADDRESS NODES HAS 'Mexico' OR 'Monaco' IN THEIR ADDRESS PROPERTY?
+#### *** NEO4J Exercise 4: HOW MANY ADDRESS NODES HAS 'Mexico' AND 'Monaco' IN THEIR ADDRESS PROPERTY?
 
-####  JOINS
+####  Joins
 
-Find joint/linked entities with double MATCH, find the officers from Hungary and the Entities linked to them:
+Find the Officers and the Entities linked to them (double MATCH, )
+
 ```
 MATCH (o:Officer) 
-WHERE o.countries CONTAINS 'Hungary'
 MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
+LIMIT 10
 ```
 
 [In SQL would be something like this:
@@ -283,12 +435,21 @@ USING (relationship)
 `
 ]
 
+Find joint/linked entities with double MATCH, find the officers from Hungary and the Entities linked to them:
+```
+MATCH (o:Officer) 
+WHERE o.countries CONTAINS 'Hungary'
+MATCH (o)-[r]-(c:Entity)
+RETURN o,r,c
+```
+
+
 A variation of the previous one, but here the link type is specified:
 ```
 MATCH (o:Officer) 
 WHERE o.countries CONTAINS 'Hungary'
-MATCH (o)-[:DIRECTOR_OF]-(c:Entity)
-RETURN o,c
+MATCH (o)-[r:DIRECTOR_OF]-(c:Entity)
+RETURN o,r,c
 ```
 
 Find the Officers called "aliyev" and Entities related to them:
@@ -298,16 +459,18 @@ WHERE toLower(o.name) CONTAINS "aliyev"
 MATCH (o)-[r]-(c:Entity)
 RETURN o,r,c
 ```
+####  Count
 
-### ***Exercise 9***
-TRANSLATE THIS CYPHER QUERY TO SQL AS CLOSE AS YOU CAN.
+Which country has the most addresses 
 ```
-MATCH (n:Officer) WHERE exists(n.countries)
-RETURN n.country_codes, count(*)
+MATCH (n:Address) 
+RETURN n.countries, count(*)
 ORDER BY count(*) DESC
 LIMIT 10
 ```
-What the previous query is returning?
+
+#### *** NEO4J Exercise 5: List the name and number connections of the top 10 most connected Officers from Bulgaria.Who is the no1.
+
 
 #### Node analytics
 
@@ -339,14 +502,12 @@ MATCH (a)--()-[r]-()--(a)
 RETURN n as degree, count(DISTINCT r) AS clustering_coefficient
 ```
 
-### ***Exercise 10***
-List the name and degree of the top 10 most connected Officers from Romania.Tell me the no1.
 
 
 <a name="homework"/>
 
 
-# HOMEWORK! (Submit to moodle by 18nd of October 21:00)
+# HOMEWORK (Optional)
 
 Use the datasets configured for each DB and create queries to solve the following tasks:
 
