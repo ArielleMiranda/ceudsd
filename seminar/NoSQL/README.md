@@ -174,6 +174,8 @@ SELECT STDDEV(water_level) FROM h2o_feet
 SELECT PERCENTILE(water_level,5) FROM h2o_feet WHERE location = 'coyote_creek'
 ```
 
+The value 1.148 is larger than 5% of the values in water_level where location equals coyote_creek.
+
 # MONGO
 
 <a name="mongo"/>
