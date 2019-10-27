@@ -1,1 +1,0 @@
-docker run --rm --name redis-commander -d --env REDIS_HOSTS=redis-cli -h r2-001.4phq3b.0001.euw1.cache.amazonaws.com:6379 -p 8081:8081 rediscommander/redis-commander:latest
