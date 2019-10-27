@@ -7,3 +7,8 @@ private/exercise_platform/neo4j/data
 private/exercise_platform/neo4j/logs
 
 .Rproj.user
+*.pid
+private/exercise_platform/zeppelin/mysql/db/performance_schema/accounts.frm
+private/exercise_platform/solr/flights.csv
+private/exercise_platform/solr/flightdelays.csv
+private/exercise_platform/mongo/airbnb.json

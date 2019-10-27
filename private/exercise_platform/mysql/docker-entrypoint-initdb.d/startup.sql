@@ -1,5 +1,6 @@
 CREATE USER 'zeppelin'@'%' IDENTIFIED BY 'zeppelin';
 
+
 CREATE DATABASE admin; 
 USE admin;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
@@ -11,8 +12,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Amodei_Ellen; 
-USE Amodei_Ellen;
+CREATE DATABASE barbayeva_anna; 
+USE barbayeva_anna;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -22,8 +23,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Baldwin_Alexander;
-USE Baldwin_Alexander;
+CREATE DATABASE benya_diana;
+USE benya_diana;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -33,8 +34,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Bangari_Adarsh_Gurappa;
-USE Bangari_Adarsh_Gurappa;
+CREATE DATABASE canyurt_baha;
+USE canyurt_baha;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -44,8 +45,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Berki_Tamas;
-USE Berki_Tamas;
+CREATE DATABASE cheng_alec;
+USE cheng_alec;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -55,8 +56,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Boda_Imre;
-USE Boda_Imre;
+CREATE DATABASE figuerres_karlo;
+USE figuerres_karlo;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -66,8 +67,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Bokonyi_Gabor;
-USE Bokonyi_Gabor;
+CREATE DATABASE futo_gergely;
+USE futo_gergely;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -77,8 +78,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Burghard_Tamas;
-USE Burghard_Tamas;
+CREATE DATABASE grigoryan_anna;
+USE grigoryan_anna;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -88,8 +89,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Chytil_Mario;
-USE Chytil_Mario;
+CREATE DATABASE gulyas_attila;
+USE gulyas_attila;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -99,8 +100,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Dalnoki_Gabor;
-USE Dalnoki_Gabor;
+CREATE DATABASE jarabek_gergely;
+USE jarabek_gergely;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -110,8 +111,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Demeter_Melinda;
-USE Demeter_Melinda;
+CREATE DATABASE kacerja_ilda;
+USE kacerja_ilda;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -121,8 +122,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Domokos_Barna;
-USE Domokos_Barna;
+CREATE DATABASE kerekes_szabolcs;
+USE kerekes_szabolcs;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -132,8 +133,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Duronelly_Peter;
-USE Duronelly_Peter;
+CREATE DATABASE mishra_abhishek;
+USE mishra_abhishek;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -143,8 +144,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Elhence_Geeta;
-USE Elhence_Geeta;
+CREATE DATABASE molnar_istvan;
+USE molnar_istvan;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -154,8 +155,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Gesheva_Nadezhda;
-USE Gesheva_Nadezhda;
+CREATE DATABASE molnar_monika;
+USE molnar_monika;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -165,8 +166,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Gomes_Nuno;
-USE Gomes_Nuno;
+CREATE DATABASE pasztor_benedek;
+USE pasztor_benedek;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -176,8 +177,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Haider_Ali;
-USE Haider_Ali;
+CREATE DATABASE surman_domonkos;
+USE surman_domonkos;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -187,8 +188,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Illes_Gabor;
-USE Illes_Gabor;
+CREATE DATABASE szekely_gergo;
+USE szekely_gergo;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -198,8 +199,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Kelemen_Andras;
-USE Kelemen_Andras;
+CREATE DATABASE szigeti_patrik;
+USE szigeti_patrik;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -209,8 +210,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Kinizsi_Gergely;
-USE Kinizsi_Gergely;
+CREATE DATABASE tanveer_sama;
+USE tanveer_sama;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -220,8 +221,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Koncz_Tamas;
-USE Koncz_Tamas;
+CREATE DATABASE toth_bence;
+USE toth_bence;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -231,8 +232,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Kozula_Adam;
-USE Kozula_Adam;
+CREATE DATABASE gaspor_adam;
+USE gaspor_adam;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -242,8 +243,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Kratzer_William;
-USE Kratzer_William;
+CREATE DATABASE li_shengxia;
+USE li_shengxia;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -253,8 +254,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE McGrew_Jacob;
-USE McGrew_Jacob;
+CREATE DATABASE qamar_iqra;
+USE qamar_iqra;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -264,8 +265,10 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Mirhossein_Seyed_Reza;
-USE Mirhossein_Seyed_Reza;
+
+
+CREATE DATABASE alshaibani_ahmed;
+USE alshaibani_ahmed;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -275,8 +278,8 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Nand_Gaurav;
-USE Nand_Gaurav;
+CREATE DATABASE matisz_agnes;
+USE matisz_agnes;
 CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
 DELETE FROM birdstrikes;
 LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
@@ -286,186 +289,31 @@ reported_date = nullif(@v_reported_date, ''),
 speed = nullif(@v_speed, '')
 ;
 
-CREATE DATABASE Niranjan_Nikitha;
-USE Niranjan_Nikitha;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Papp_Roland;
-USE Papp_Roland;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Pasztor_Aurel;
-USE Pasztor_Aurel;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Paziczki_Peter;
-USE Paziczki_Peter;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Radics_Gabor_Balint;
-USE Radics_Gabor_Balint;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Szamohval_Monika_Mira;
-USE Szamohval_Monika_Mira;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Szilagyi_Laszlo_Janos;
-USE Szilagyi_Laszlo_Janos;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Tagai_Lilla;
-USE Tagai_Lilla;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Tumaliuan_Faye_Beatriz;
-USE Tumaliuan_Faye_Beatriz;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Verkmann_Gabor;
-USE Verkmann_Gabor;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Weidlich_David_Laszlo;
-USE Weidlich_David_Laszlo;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Yetkin_Cagdas;
-USE Yetkin_Cagdas;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
-
-CREATE DATABASE Zankay_Balazs_Peter;
-USE Zankay_Balazs_Peter;
-CREATE TABLE birdstrikes (id INTEGER NOT NULL,aircraft VARCHAR(32),flight_date DATE NOT NULL,damage VARCHAR(16) NOT NULL,airline VARCHAR(255) NOT NULL,state VARCHAR(255),phase_of_flight VARCHAR(32),reported_date DATE,bird_size VARCHAR(16),cost INTEGER NOT NULL,speed INTEGER,PRIMARY KEY(id));
-DELETE FROM birdstrikes;
-LOAD DATA INFILE '/var/lib/mysql-files/birdstrikes.csv' INTO TABLE birdstrikes FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' IGNORE 1 LINES
-(id, aircraft, flight_date, damage, airline, state, phase_of_flight, @v_reported_date, bird_size, cost, @v_speed)
-set
-reported_date = nullif(@v_reported_date, ''),
-speed = nullif(@v_speed, '')
-;
 
 GRANT FILE ON *.* TO 'zeppelin'@'%';
 GRANT ALL PRIVILEGES ON admin.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Amodei_Ellen.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Baldwin_Alexander.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Bangari_Adarsh_Gurappa.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Berki_Tamas.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Boda_Imre.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Bokonyi_Gabor.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Burghard_Tamas.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Chytil_Mario.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Dalnoki_Gabor.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Demeter_Melinda.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Domokos_Barna.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Duronelly_Peter.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Elhence_Geeta.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Gesheva_Nadezhda.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Gomes_Nuno.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Haider_Ali.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Illes_Gabor.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Kelemen_Andras.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Kinizsi_Gergely.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Koncz_Tamas.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Kozula_Adam.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Kratzer_William.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON McGrew_Jacob.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Mirhossein_Seyed_Reza.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Nand_Gaurav.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Niranjan_Nikitha.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Papp_Roland.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Pasztor_Aurel.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Paziczki_Peter.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Radics_Gabor_Balint.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Szamohval_Monika_Mira.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Szilagyi_Laszlo_Janos.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Tagai_Lilla.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Tumaliuan_Faye_Beatriz.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Verkmann_Gabor.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Weidlich_David_Laszlo.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Yetkin_Cagdas.* TO 'zeppelin'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON Zankay_Balazs_Peter.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON barbayeva_anna.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON benya_diana.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON canyurt_baha.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON cheng_alec.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON figuerres_karlo.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON futo_gergely.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON grigoryan_anna.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON gulyas_attila.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON jarabek_gergely.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON kacerja_ilda.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON kerekes_szabolcs.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON mishra_abhishek.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON molnar_istvan.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON molnar_monika.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON pasztor_benedek.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON surman_domonkos.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON szekely_gergo.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON szigeti_patrik.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON tanveer_sama.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON toth_bence.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON gaspor_adam.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON li_shengxia.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON qamar_iqra.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON alshaibani_ahmed.* TO 'zeppelin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON matisz_agnes.* TO 'zeppelin'@'%' WITH GRANT OPTION;

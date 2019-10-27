@@ -1,0 +1,1000 @@
+  304  sudo docker ps
+  305  sudo ./stop_containers.sh 
+  306  cd private/exercise_platform/
+  307  cd ceudsd/private/exercise_platform/
+  308  sudo ./stop_containers.sh 
+  309  sudo ./start_containers.sh 
+  310  sudo docker ps
+  311  cd ceudsd/private/exercise_platform/
+  312  cd solr/
+  313  ls
+  314  ./start_solr.sh 
+  315  sudo ./start_solr.sh 
+  316  sudo docker ps 
+  317  cd ceudsd/private/exercise_platform/docker stop solr
+  318  sudo tform/docker stop solr
+  319  sudo docker stop solr
+  320  sudo docker ps 
+  321  sudo docker stop solr
+  322  sudo docker stop ceudsd-solr
+  323  sudo docker-rm  ceudsd-solr
+  324  sudo docker rm ceudsd-solr
+  325  sudo ./start_solr.sh 
+  326  sudo docker ps 
+  327  cd ..
+  328  ls
+  329  cd neo4j/
+  330  ./start_neo4j.sh 
+  331  sudo ./start_neo4j.sh 
+  332  sudo docker stop ceudsd-solr
+  333  cd ..
+  334  cd influxdb/
+  335  sudo ./start_influx.sh 
+  336  sudo docker ps 
+  337  sudo docker stop pensive_hugle
+  338  sudo docker ps 
+  339  ./start_influx.sh 
+  340  sudo ./start_influx.sh 
+  341  sudo docker stop influxdb
+  342  sudo ./start_influx.sh 
+  343  sudo docker 
+  344  sudo docker images
+  345  sudo docker rm e1eb18fb3d72
+  346  sudo ./start_influx.sh 
+  347  sudo docker rm /influxdb
+  348  sudo ./start_influx.sh 
+  349  sudo docker rm /influxdb
+  350  sudo ./start_influx.sh 
+  351  sudo docker rm /influxdb
+  352  sudo ./start_influx.sh 
+  353  sudo ./populate_data.sh 
+  354  sudo docker ps 
+  355  sudo docker stop influxdb
+  356  sudo docker rm /influxdb
+  357  sudo docker ps 
+  358  pwd
+  359  cd private/exercise_platform/
+  360  ls
+  361  cd ceudsd/
+  362  ls
+  363  cd private/
+  364  ls
+  365  cd exercise_platform/
+  366  ls
+  367  cd neo4j/
+  368  ls
+  369  sudo ./start_neo4j.sh 
+  370  ls
+  371  chmod 777 data
+  372  sudo chmod 777 data
+  373  sudo chmod 777 data/databases/
+  374  df
+  375  df -h
+  376  lsblk
+  377  sudo docker images
+  378  lsblk
+  379  df -h
+  380  sudo growpart /dev/xvda1
+  381  lsblk
+  382  sudo growpart /dev/xvda1
+  383  sudo growpart /dev/xvda 1
+  384  lsblk
+  385  sudo resize2fs /dev/xvda1
+  386  lsblk
+  387  df -h
+  388  sudo docker ps
+  389  sudo docker stop ecstatic_heisenberg
+  390  sudo docker rm ecstatic_heisenberg
+  391  ./start_neo4j.sh 
+  392  sudo ./start_neo4j.sh 
+  393  sudo docker ps
+  394  sudo docker stop ecstatic_heisenberg[A
+  395  sudo docker stop modest_booth
+  396  sudo docker rm modest_booth
+  397  sudo ./start_neo4j.sh 
+  398  sudo docker ps
+  399  sudo docker stop neo4j
+  400  sudo docker rm neo4j
+  401  sudo ./start_neo4j.sh 
+  402  ls
+  403  cd data/databases/
+  404  ls
+  405  chmod 777 graph.db/
+  406  ls
+  407  help chmod
+  408  chmod
+  409  chmod --hlep
+  410  chmod --help
+  411  chmod -R 777 graph.db/
+  412  sudo docker stop neo4j
+  413  sudo docker rm neo4j
+  414  chmod -R 777 graph.db/
+  415  chmod --help
+  416  chmod -R 777 graph.db
+  417  chmod 777 graph.db
+  418  sudo chmod -R 777 graph.db
+  419  sudo ./start_neo4j.sh 
+  420  cd ..
+  421  sudo ./start_neo4j.sh 
+  422  sudo docker stop neo4j
+  423  sudo docker rm neo4j
+  424  sudo ./start_neo4j.sh 
+  425  sudo docker stop neo4j
+  426  sudo docker rm neo4j
+  427  sudo ./start_neo4j.sh 
+  428  sudo docker stop neo4j
+  429  sudo docker rm neo4j
+  430  sudo ./start_neo4j.sh 
+  431  sudo docker stop neo4j
+  432  sudo docker rm neo4j
+  433  sudo ./start_neo4j.sh 
+  434  sudo docker stop neo4j
+  435  sudo docker rm neo4j
+  436  sudo ./start_neo4j.sh 
+  437  sudo docker stop neo4j
+  438  sudo docker rm neo4j
+  439  sudo ./start_neo4j.sh 
+  440  sudo docker stop neo4j
+  441  sudo docker rm neo4j
+  442  sudo ./start_neo4j.sh 
+  443  ls
+  444  cd logs/
+  445  cd .
+  446  cd ..
+  447  sudo chmod -R 777 logs/
+  448  sudo docker rm neo4j
+  449  sudo docker stop neo4j
+  450  sudo docker rm neo4j
+  451  sudo ./start_neo4j.sh 
+  452  sudo docker stop neo4j
+  453  sudo docker rm neo4j
+  454  sudo ./start_neo4j.sh 
+  455  sudo docker exec -it neo4j /bin/sh
+  456  sudo docker stop neo4j
+  457  sudo docker rm neo4j
+  458  sudo ./start_neo4j.sh 
+  459  sudo docker exec -it neo4j /bin/sh
+  460  sudo docker stop neo4j
+  461  sudo docker rm neo4j
+  462  sudo ./start_neo4j.sh 
+  463  sudo docker exec -it neo4j /bin/sh
+  464  sudo docker stop neo4j
+  465  sudo docker rm neo4j
+  466  sudo ./start_neo4j.sh 
+  467  sudo docker exec -it neo4j /bin/sh
+  468  sudo docker stop neo4j
+  469  sudo docker rm neo4j
+  470  sudo ./start_neo4j.sh 
+  471  sudo docker exec -it neo4j /bin/sh
+  472  ls
+  473  sudo docker exec -it neo4j /bin/sh
+  474  sudo docker stop neo4j
+  475  sudo docker rm neo4j
+  476  sudo ./start_neo4j.sh 
+  477  pws
+  478  pwd
+  479  ls
+  480  cd ceudsd
+  481  ls
+  482  cd private/
+  483  ls
+  484  cd ex
+  485  cd exercise_platform/
+  486  ls
+  487  cd neo4j/
+  488  ls
+  489  sudo ./start_neo4j.sh 
+  490  sudo docker exec -it neo4j /bin/sh
+  491  ls
+  492  sudo docker stop neo4j
+  493  sudo docker rm neo4j
+  494  sudo ./start_neo4j.sh 
+  495  sudo docker exec -it neo4j /bin/sh
+  496  sudo docker ps
+  497  cd ..
+  498  ls
+  499  cd solr/
+  500  sudo ./start_solr.sh 
+  501  sudo docker rm solr
+  502  sudo docker rm /ceudsd-solr
+  503  sudo docker ps
+  504  sudo ./start_solr.sh 
+  505  sudo docker ps
+  506  cd ..
+  507  cd influxdb/
+  508  sudo ./start_influx.sh 
+  509  sudo docker ps
+  510  sudo ./populate_data.sh 
+  511  cd ..
+  512  cd solr/
+  513  ls
+  514  sudo ./populate_data.sh 
+  515  sudo docker stop solr
+  516  sudo docker rm solr
+  517  sudo ./start_solr.sh 
+  518  sudo ./populate_data.sh 
+  519  pwd
+  520  cd ceudsd/private/exercise_platform/
+  521  sudo ./stop_containers.sh 
+  522  sudo ./start_containers.sh 
+  523  pd
+  524  pwd
+  525  cd ceudsd/private/exercise_platform/
+  526  sudo ./stop_containers.sh 
+  527  sudo ./start_containers.sh 
+  528  free -h
+  529  docker ps
+  530  sudo docker ps 
+  531  sudo docker stop solr
+  532  sudo docker stop influxdb
+  533  sudo docker stop neo4j
+  534  sudo docker ps -a
+  535  ll
+  536  cd ceudsd/
+  537  ll
+  538  cd private/
+  539  ll
+  540  cd exercise_platform/
+  541  ll
+  542  cd zeppelin/
+  543  ll
+  544  cd ..
+  545  ll
+  546  cat start_containers.sh 
+  547  docker run -p 80:8080 --restart always -v $PWD/run:/zeppelin/run -v $BASE_DIR/zeppelin/conf:/zeppelin/conf -v $BASE_DIR/zeppelin/logs:/logs -v $BASE_DIR/zeppelin/interpreter/mysql:/zeppelin/interpreter/mysql -v $BASE_DIR/zeppelin/notebook:/notebook -e ZEPPELIN_LOG_DIR='/logs' -e ZEPPELIN_NOTEBOOK_DIR='/notebook' --link ceudsd-mysql:mysql --name zeppelin apache/zeppelin:0.8.0
+  548  sudo docker run -p 80:8080 --restart always -v $PWD/run:/zeppelin/run -v $BASE_DIR/zeppelin/conf:/zeppelin/conf -v $BASE_DIR/zeppelin/logs:/logs -v $BASE_DIR/zeppelin/interpreter/mysql:/zeppelin/interpreter/mysql -v $BASE_DIR/zeppelin/notebook:/notebook -e ZEPPELIN_LOG_DIR='/logs' -e ZEPPELIN_NOTEBOOK_DIR='/notebook' --link ceudsd-mysql:mysql --name zeppelin apache/zeppelin:0.8.0
+  549  sudo docker ps -a
+  550  sudo docker start zeppelin
+  551  sudo docker ps
+  552  time
+  553  date
+  554  time
+  555  date
+  556  sudo docker ps -a
+  557  sudo docker start solr
+  558  sudo docker start influxdb
+  559  sudo docker start neo4j
+  560  free -h
+  561  top
+  562  ps aux
+  563  ps aux | grep infl
+  564  sudo docker ps =a
+  565  sudo docker ps -a
+  566  ll
+  567  cd ceudsd/
+  568  ll
+  569  cd private/
+  570  ll
+  571  cd exercise_platform/
+  572  ll
+  573  cd influxdb/
+  574  ll
+  575  cat start_influx.sh 
+  576  cat populate_data.sh 
+  577  sudo docker ps -a
+  578  lll
+  579  ll
+  580  cat start_influx.sh 
+  581  cat /etc/passwd
+  582  ll
+  583  pwd
+  584  cd ceudsd/
+  585  ll
+  586  cd seminar/
+  587  ll
+  588  cd ../private/
+  589  ll
+  590  cd exercise_platform/
+  591  ll
+  592  cd terminal/
+  593  ll
+  594  nano addceuuser.sh 
+  595  nano setup.sh 
+  596  cat create_users.sh 
+  597  ll
+  598  cat addceuuser.sh 
+  599  cat /etc/skel/.profile 
+  600  ll
+  601  cat setup.sh 
+  602  ll
+  603  sudo sh setup.sh 
+  604  sudo nano setup.sh 
+  605  sudo sh setup.sh 
+  606  nano setup.sh 
+  607  ll /home/
+  608  ll /home/backup/
+  609  sudo sh ./setup.sh 
+  610  cd ..
+  611  ll
+  612  ll mysql/docker-entrypoint-initdb.d/
+  613  ll mysql/docker-entrypoint-initdb.d/startup.sql 
+  614  nano mysql/docker-entrypoint-initdb.d/startup.sql 
+  615  ll
+  616  cd terminal/
+  617  ll
+  618  nano addceuuser.sh 
+  619  nano create_users.sh 
+  620  ll
+  621  cat create_users.sh 
+  622  chmod a+x ./*
+  623  ll
+  624  cat setup.sh 
+  625  cat addceuuser.sh 
+  626  ll
+  627  ./create_users.sh 
+  628  nano create_users.sh 
+  629  ll
+  630  sudo nano /etc/ssh/sshd_config 
+  631  sudo service sshd reload
+  632  ll
+  633  echo -e "CEUDSDXXX666" | passwd --stdin sanyo_adam
+  634  echo -e "CEUDSDXXX666\nCEUDSDXXX666" | passwd sanyo_adam
+  635  sudo echo -e "CEUDSDXXX666\nCEUDSDXXX666" | passwd sanyo_adam
+  636  echo -e "CEUDSDXXX666\nCEUDSDXXX666" | sudo passwd sanyo_adam
+  637  ll
+  638  chmod a+x changepasswords.sh 
+  639  ./changepasswords.sh 
+  640  ll
+  641  exit
+  642  ll
+  643  ll /home/backup/
+  644  cd /var/log
+  645  ls
+  646  cat wtmp
+  647  cat syslog
+  648  ls
+  649  cat auth.log
+  650  cat auth.log | grep Failed
+  651  ls
+  652  ls -l
+  653  sudo docker ps -a
+  654  cd
+  655  cp /home/backup/birdstrikes.csv ./
+  656  ls
+  657  ls -l
+  658  cat birdstrikes.csv 
+  659  less birdstrikes.csv 
+  660  head birdstrikes.csv 
+  661  echo moszi;Airplaine;
+  662  echo "moszi;Airplaine;"
+  663  echo "10;AIrplamne"
+  664  echo "10,moszi,mypassword"
+  665  head -n 20 birdstrikes.csv 
+  666  head -20 birdstrikes.csv 
+  667  man head
+  668  tail birdstrikes.csv 
+  669  tail -20 birdstrikes.csv 
+  670  tail 
+  671  head -n 5 birdstrikes.csv | tail -n 1
+  672  head -n 5 birdstrikes.csv
+  673  head -n 5 birdstrikes.csv | tail -n 1
+  674  echo test > pig.txt
+  675  print pig.txt 
+  676  cat pig.txt 
+  677  head -n 5 birdstrikes.csv | tail -n 1
+  678  head -n 5 birdstrikes.csv | tail -n 1 > myprettypony.txt
+  679  ls
+  680  cat myprettypony.txt 
+  681  nano myprettypony.txt 
+  682  cat myprettypony.txt 
+  683  nano myprettypony.txt 
+  684  vi myprettypony.txt 
+  685  nano myprettypony.txt 
+  686  vi myprettypony.txt 
+  687  cat birdstrikes.csv | grep California
+  688  cat birdstrikes.csv | "D;C"
+  689  cat birdstrikes.csv | grep "D;C"
+  690  cat birdstrikes.csv | grep -v Airplane
+  691  man grep
+  692  wc birdstrikes.csv 
+  693  man wc
+  694  wc -l birdstrikes.csv 
+  695  tail -1 birdstrikes.csv 
+  696  head -1 birdstrikes.csv 
+  697  head -5  birdstrikes.csv 
+  698  head 10 birdstrikes.csv 
+  699  head -10 birdstrikes.csv 
+  700  head -10 birdstrikes.csv | wc
+  701  cat birdstrikes.csv | grep california | wc -l
+  702  cat birdstrikes.csv | grep -i california | wc -l
+  703  cat birdstrikes.csv | cut -d ";" -f5
+  704  cat birdstrikes.csv | head -1 
+  705  cat birdstrikes.csv | cut -d ";" -f5 | head -1
+  706  cat birdstrikes.csv | cut -d ";" -f5 | less
+  707  cat birdstrikes.csv | cut -d ';' -f2,3 | less
+  708  cat birdstrikes.csv | cut -d ';' -f2,5 | less
+  709  echo "anna,peter;peter2;anna2;laszlo" | cut -d "," -f2
+  710  echo "anna,peter;peter2;anna2;laszlo" | cut -d "nn" -f2
+  711  echo "anna,peter;peter2;anna2;laszlo" | cut -d "n" -f2
+  712  echo "anna,peter;peter2;anna2;laszlo" | cut -d "a" -f2
+  713  cat birdstrikes.csv | cut -d ';' -f2 | sort
+  714  sort birdstrikes.csv 
+  715  cat myprettypony.txt 
+  716  sort myprettypony.txt 
+  717  cat birdstrikes.csv | sort -k11 -t ';' -n -r | less
+  718  man sort
+  719  cat birdstrikes.csv | sort -k11 -t ';' -n -r | less
+  720  nano numericTest.text
+  721  sort numericTest.text 
+  722  sort numericTest.text -n
+  723  head -1 birdstrikes.csv 
+  724  cat birdstrikes.csv | cut -d ";" -f10
+  725  cat birdstrikes.csv | cut -d ";" -f10 | sort -n
+  726  cat birdstrikes.csv | cut -d ";" -f10 | sort -n | tail -1
+  727  cat birdstrikes.csv | cut -d ";" -f10 | sort -n -r | tail -1
+  728  head -1 birdstrikes.csv 
+  729  cat birdstrikes.csv | cut -d ";" -f9
+  730  cat birdstrikes.csv | cut -d ";" -f9 | uniq
+  731  cat birdstrikes.csv | cut -d ";" -f9 | sort | uniq
+  732  nano lines.txt
+  733  cat lines.txt 
+  734  cat lines.txt | uniq 
+  735  cat lines.txt | sort
+  736  cat lines.txt | sort | uniq
+  737  cat birdstrikes.csv | cut -d ';' -f6 | sort | uniq
+  738  cat birdstrikes.csv | cut -d ';' -f6 | sort | uniq
+  739  cat birdstrikes.csv | cut -d ';' -f6 | sort | uniq -c
+  740  ls
+  741  nano myFirstScript.moszi
+  742  chmod a+x myFirstScript.moszi 
+  743  ./myFirstScript.moszi 
+  744  nano myFirstScript.moszi 
+  745  ./myFirstScript.moszi | less
+  746  ./myFirstScript.moszi
+  747  pwd
+  748  sudo docker ps
+  749  sudo docker stop solr
+  750  sudo docker rm solr
+  751  sudo docker stop influx
+  752  sudo docker stop influxdb
+  753  sudo docker rm influxdb
+  754  sudo docker stop ne4j
+  755  sudo docker stop neo4j
+  756  sudo docker rm neo4j
+  757  sudo docker ps
+  758  ls
+  759  pwd
+  760  ls
+  761  cd ceudsd/seminar/
+  762  ls
+  763  cd ..
+  764  cd private/
+  765  ls
+  766  cd exercise_platform/
+  767  ls
+  768  sudo ./stop_containers.sh 
+  769  sudo ./start_containers.sh 
+  770  pwd
+  771  cd ceudsd/private/exercise_platform/
+  772  ./start_containers.sh 
+  773  sudo su
+  774  sudo docker ps 
+  775  docker run -p 80:8080 --restart always -v $PWD/run:/zeppelin/run -v $BASE_DIR/zeppelin/conf:/zeppelin/conf -v $BASE_DIR/zeppelin/logs:/logs -v $BASE_DIR/zeppelin/interpreter/mysql:/zeppelin/interpreter/mysql -v $BASE_DIR/zeppelin/notebook:/notebook -e ZEPPELIN_LOG_DIR='/logs' -e ZEPPELIN_NOTEBOOK_DIR='/notebook' --link ceudsd-mysql:mysql --name zeppelin apache/zeppelin:0.8.0
+  776  history
+  777  history > history.log
+  778  pwd
+  779  cd ceudsd/seminar/
+  780  ls
+  781  cd ..
+  782  cd private/exercise_platform/
+  783  ls
+  784  sudo ./stop_containers.sh 
+  785  sudo docker ps
+  786  sudo ./start_containers.sh 
+  787  sudo ./stop_containers.sh 
+  788  sudo ./start_containers.sh 
+  789  sudo apt-get update
+  790  sudo apt-get upgrade
+  791  sudo apt-get -f install
+  792  sudo apt-get upgrade
+  793  docker --version
+  794  sudo docker images -a
+  795  sudo docker rm zeppelin
+  796  ./stop_containers.sh 
+  797  sudo ./stop_containers.sh 
+  798  sudo ./start_containers.sh 
+  799  sudo ./stop_containers.sh 
+  800  sudo docker images -a
+  801  sudo docker rmi 353d7641c769
+  802  sudo docker images -a
+  803  sudo ./start_containers.sh 
+  804  sudo docker rmi f8a5deb40eb3
+  805  sudo docker images -a
+  806  sudo docker rmi e1eb18fb3d72
+  807  sudo docker images -a
+  808  sudo docker rmi f8a5deb40eb3
+  809  sudo docker images -a
+  810  sudo docker rmi -f f8a5deb40eb3
+  811  sudo docker images --a
+  812  sudo docker images -a
+  813  sudo docker rmi -f 45749c8baa2a
+  814  sudo docker images -a
+  815  df
+  816  sudo ./start_containers.sh 
+  817  df
+  818  lsblk
+  819  sudo file -s /dev/xvd*
+  820  lsblk
+  821  sudo growpart /dev/xvda 1
+  822  lsblk
+  823  df -h
+  824  sudo resize2fs /dev/xvda1
+  825  df -h
+  826  sudo docker images -a
+  827  df -h
+  828  sudo ./stop_containers.sh 
+  829  pwd
+  830  sudo /home/ubuntu/ceudsd/private/exercise_platform/stop_containers.sh 
+  831  sudo /home/ubuntu/ceudsd/private/exercise_platform/start_containers.sh 
+  832  sudo /home/ubuntu/ceudsd/private/exercise_platform/stop_containers.sh 
+  833  sudo /home/ubuntu/ceudsd/private/exercise_platform/start_containers.sh 
+  834  mysql --user zeppelin --password zeppelin
+  835  mysql
+  836  sudo nano /etc/ssh/sshd_config 
+  837  pwd
+  838  cd ceudsd/private/exercise_platform/zeppelin/
+  839  sudo /home/ubuntu/ceudsd/private/exercise_platform/start_containers.sh 
+  840  sudo /home/ubuntu/ceudsd/private/exercise_platform/stop_containers.sh 
+  841  sudo /home/ubuntu/ceudsd/private/exercise_platform/start_containers.sh 
+  842  sudo /home/ubuntu/ceudsd/private/exercise_platform/stop_containers.sh 
+  843  cd.
+  844  pwd
+  845  cd /
+  846  pwd
+  847  cd /home/ubuntu/ceudsd/private/exercise_platform 
+  848  ./start_containers.sh 
+  849  sudo ./start_containers.sh 
+  850  sudo ./stop_containers.sh 
+  851  sudo ./start_containers.sh 
+  852  sudo ./stop_containers.sh 
+  853  sudo ./start_containers.sh 
+  854  pwd
+  855  cd ceudsd/private/exercise_platform/mysql/docker-entrypoint-initdb.d/
+  856  ./startup2.sql
+  857  sudo ./startup2.sql
+  858  sudo -su
+  859  sudo
+  860  ls
+  861  ps aux
+  862  cd 
+  863  pwd
+  864  ls
+  865  cd ceudsd/private/exercise_platform/stop
+  866  cd ceudsd/private/exercise_platform
+  867  suod ./stop_containers.sh 
+  868  sudo ./stop_containers.sh 
+  869  cd ceudsd/private/exercise_platform
+  870  ./start_containers.sh 
+  871  sudo ./start_containers.sh 
+  872  x
+  873  sudo ./start_containers.sh 
+  874  sudo ./stop_containers.sh 
+  875  sudo ./start_containers.sh 
+  876  sudo ./stop_containers.sh 
+  877  sudo ./start_containers.sh 
+  878  sudo ./stop_containers.sh 
+  879  sudo ./start_containers.sh 
+  880  sudo ./stop_containers.sh 
+  881  sudo ./start_containers.sh 
+  882  sudo ./stop_containers.sh 
+  883  sudo ./start_containers.sh 
+  884  sudo ./stop_containers.sh 
+  885  sudo ./start_containers.sh 
+  886  sudo userdel kacerja_ilda
+  887  cd /home/ubuntu/ceudsd/private/exercise_platform/terminal/
+  888  ./del_users.sh 
+  889  ./create_users.sh 
+  890  ./changepasswords.sh
+  891  cd /home/ubuntu/ceudsd/private/exercise_platform/terminal/
+  892  ./create_users.sh 
+  893  ./changepasswords.sh
+  894  head -n 7 birdstrikes.csv | tail -n 2 > myprettypony.txt
+  895  pwd
+  896  cat birdstrikes.csv | cut -d ';' -f6 | sort | uniq | wc -l
+  897  apt-get update
+  898  sudo apt-get update
+  899  sudo apt-get upgrade
+  900  docker --version
+  901  docker run --name some-redis -d redis
+  902  sudo docker run --name some-redis -d redis
+  903  sudo docker ps
+  904  redis-small-ro.4phq3b.ng.0001.euw1.cache.amazonaws.com:6379
+  905  telnet
+  906  telnet redis-small-ro.4phq3b.ng.0001.euw1.cache.amazonaws.com:6379
+  907  telnet redis-small-ro.4phq3b.ng.0001.euw1.cache.amazonaws.com 6379
+  908  sudo apt-get install redis-cli
+  909  sudo apt-get install redis
+  910  redis-cli
+  911  sudo apt-get install redis-server
+  912  redis-cli -h redis-small-ro.4phq3b.ng.0001.euw1.cache.amazonaws.com -p 6379
+  913  redis-cli -h redis-small.4phq3b.ng.0001.euw1.cache.amazonaws.com -p 6379
+  914  redis-cli -h ceuredis-001.4phq3b.0001.euw1.cache.amazonaws.com -p 6379
+  915  docker run --restart unless-stopped -d -p 8080:8080 --name=redsmin --net=redsmin
+  916  sudo docker run --restart unless-stopped -d -p 8080:8080 --name=redsmin --net=redsmin
+  917  sudo docker run -p 8080:8080 --name=redsmin --net=redsmin
+  918  docker run --name redsmin --restart unless-stopped -p 8080:8080 -d redsmin
+  919  sudo docker run --name redsmin --restart unless-stopped -p 8080:8080 -d redsmin
+  920  docker run --rm --name redis-commander -d   --env REDIS_HOSTS=r1.4phq3b.ng.0001.euw1.cache.amazonaws.com   -p 8080:8080   rediscommander/redis-commander:latest
+  921  docker run --rm --name redis-commander -d --env REDIS_HOSTS=r1.4phq3b.ng.0001.euw1.cache.amazonaws.com -p 8080:8080 rediscommander/redis-commander:latest
+  922  sudo docker run --rm --name redis-commander -d --env REDIS_HOSTS=r1.4phq3b.ng.0001.euw1.cache.amazonaws.com -p 8080:8080 rediscommander/redis-commander:latest
+  923  sudo docker ps
+  924  docker stop redis-command
+  925  sudo docker stop redis-commander
+  926  sudo docker rm redis-commander
+  927  sudo docker ps
+  928  sudo docker run --rm --name redis-commander -d --env REDIS_HOSTS=r1.4phq3b.ng.0001.euw1.cache.amazonaws.com -p 8081:8081 rediscommander/redis-commander:latest
+  929  sudo docker ps
+  930  redis-cli -h r1.4phq3b.ng.0001.euw1.cache.amazonaws.com -p 637
+  931  redis-cli -h r1.4phq3b.ng.0001.euw1.cache.amazonaws.com -p 6379
+  932  redis-cli -h r2-001.4phq3b.0001.euw1.cache.amazonaws.com -p 6379
+  933  docker run --rm --name redis-commander -d --env REDIS_HOSTS=redis-cli -h r2-001.4phq3b.0001.euw1.cache.amazonaws.com:6379 -p 8080:8080 rediscommander/redis-commander:latest
+  934  sudo docker run --rm --name redis-commander -d --env REDIS_HOSTS=redis-cli -h r2-001.4phq3b.0001.euw1.cache.amazonaws.com:6379 -p 8080:8080 rediscommander/redis-commander:latest
+  935  sudo docker rm redis-commander
+  936  sudo docker ps
+  937  sudo docker stop redis-commander
+  938  sudo docker ps
+  939  sudo docker rm redis-commander
+  940  sudo docker run --rm --name redis-commander -d --env REDIS_HOSTS=redis-cli -h r2-001.4phq3b.0001.euw1.cache.amazonaws.com:6379 -p 8080:8080 rediscommander/redis-commander:latest
+  941  sudo docker rm redis-commander
+  942  sudo docker stop redis-commander
+  943  sudo docker run --rm --name redis-commander -d --env REDIS_HOSTS=redis-cli -h r2-001.4phq3b.0001.euw1.cache.amazonaws.com:6379 -p 8081:8081 rediscommander/redis-commander:latest
+  944  redis-cli -h r2-001.4phq3b.0001.euw1.cache.amazonaws.com -p 6379
+  945  pip install redis
+  946  sudo apt install python-pip
+  947  sudo apt install redis
+  948  pip install redis
+  949  sudo apt install redis
+  950  pip install redis
+  951  python -m pip install redis
+  952  pip uninstall influxdb
+  953  python -m pip install influxdb
+  954  sudo python -m pip install influxdb
+  955  sudo apt-get install python-influxdb
+  956  pwd
+  957  cd ceudsd/private/exercise_platform/influxdb/
+  958  ./start_influx.sh 
+  959  sudo ./start_influx.sh 
+  960  sudo ./populate_data.sh 
+  961  sudo docker run --name mongo -d mongo:latest
+  962  sudo docker ps
+  963  sudo docker ps
+  964  sudo docker stop mongo
+  965  sudo docker rm mongo
+  966  sudo docker run --name mongo -d mongo:latest -p 27017:17017 
+  967  docker exec -it mongo  bash
+  968  sudo docker exec -it mongo  bash
+  969  sudo docker ps
+  970  sudo docker run --name mongo -d mongo:latest -p 27017:17017 
+  971  sudo docker rm mongo
+  972  sudo docker stop  mongo
+  973  sudo docker run --name mongo -d mongo:latest -p 27017:17017 
+  974  sudo docker ps
+  975  sudo docker stop  mongo
+  976  sudo docker rm mongo
+  977  sudo docker run --rm --name mongo -p 27017:17017 -d mongo:latest 
+  978  sudo docker ps
+  979  telnet 
+  980  telnet ceudsd.net 27017
+  981  sudo docker logs mongo
+  982  sudo docker ps
+  983  sudo docker logs mongo
+  984  sudo docker run -it --network some-network --rm fingo fingo --host mongo test
+  985  sudo docker run -it --network some-network --rm mongo fingo --host mongo test
+  986  sudo docker run --rm mongo fingo --host mongo test
+  987  sudo docker run --rm mongo mongo --host mongo test
+  988  sudo docker run --rm mongo mongo --host ceudsd.ent test
+  989  sudo docker run --rm mongo mongo --host ceudsd.nent test
+  990  sudo docker run --rm mongo mongo --host ceudsd.net test
+  991  sudo docker exec -it mongo bash
+  992  curl ceudsd.net:27017
+  993  curl localhost:27017
+  994  sudo docker run --rm mongo mongo --host ceudsd.net test
+  995  curl 127.0.0.1:27017
+  996  curl 127.0.0.1:27018
+  997  curl 127.0.0.1:27019
+  998  curl 127.0.0.1:27017
+  999  sudo docker stop  mongo
+ 1000  sudo docker rm  mongo
+ 1001  docker run --rm --name mongo -it -p 27017:17017 -d mongo:latest 
+ 1002  sudo docker run --rm --name mongo -it -p 27017:17017 -d mongo:latest 
+ 1003  sudo docker ps
+ 1004  curl 127.0.0.1:27017
+ 1005  sudo docker run --rm mongo mongo --host ceudsd.net test
+ 1006  sudo docker run --rm mongo mongo --host 127.0.0.1 test
+ 1007  sudo docker run --rm mongo mongo --host localhost  test
+ 1008  sudo docker run --rm mongo mongo --host localhostx test
+ 1009  sudo docker inspect mongo | grep IPAddress
+ 1010  sudo docker run --rm mongo mongo --host 172.17.0.5 test
+ 1011  sudo docker logs mongo
+ 1012  sudo docker rm  mongo
+ 1013  sudo docker stop  mongo
+ 1014  sudo docker rm  mongo
+ 1015  sudo docker run --rm --name mongo --entrypoint 'mongod --bind_ip_all' -it -p 27017:17017 -d mongo:latest 
+ 1016  sudo docker run --rm --name mongo --hostname localhost -it -p 27017:17017 -d mongo:latest 
+ 1017  sudo docker logs mongo
+ 1018  sudo docker stop  mongo
+ 1019  sudo docker rm  mongo
+ 1020  sudo docker run --rm --name mongo -it -p 127.0.0.1:27017:17017 -d mongo:latest 
+ 1021  sudo docker logs mongo
+ 1022  sudo docker stop  mongo
+ 1023  sudo docker run --rm --name mongo -it -p ceudsd.net:27017:17017 -d mongo:latest 
+ 1024  sudo docker run --rm --name mongo -it -p sudo docker run --rm --name mongo -it -p 127.0.0.1:27017:17017 -d mongo:latest :27017:17017 -d mongo:latest 
+ 1025  sudo docker run --rm --name mongo -it -p 34.246.120.110:27017:17017 -d mongo:latest 
+ 1026  sudo docker run --rm --name mongo -it -p 0.0.0.0:27017:17017 -d mongo:latest 
+ 1027  sudo docker logs mongo
+ 1028  sudo docker stop  mongo
+ 1029  sudo docker rm  mongo
+ 1030  sudo docker run --name mongo -d -p 127.0.0.1:27017:27017 mongo
+ 1031  mongo
+ 1032  sudo apt install mongodb-clients
+ 1033  mongo
+ 1034  sudo docker logs mongo
+ 1035  sudo docker inspect mongo | grep IPAddress
+ 1036  sudo docker ps
+ 1037  sudo docker inspect influxdb | grep IPAddress
+ 1038  sudo docker stop  mongo
+ 1039  sudo docker rm  mongo
+ 1040  sudo docker run --rm --name mongo -it -p 27017:17017 -d mongo:latest 
+ 1041  sudo docker ps
+ 1042  sudo docker stop  mongo
+ 1043  sudo docker rm  mongo
+ 1044  sudo docker run --rm --name mongo -it -p 27017:27017 -d mongo:latest 
+ 1045  sudo docker ps
+ 1046  pwd
+ 1047  cd ceudsd/private/exercise_platform/terminal/
+ 1048  ./changepasswords.sh
+ 1049  ./create_users.sh 
+ 1050  ./changepasswords.sh
+ 1051  pwd
+ 1052  cd ceudsd/private/exercise_platform/mongo/
+ 1053  ls
+ 1054  ./docker
+ 1055  ./docker.sh
+ 1056  sudo docker run --rm --name mongo -it -p 27017:27017 -d mongo:latest 
+ 1057  pwd
+ 1058  cd ceudsd/private/exercise_platform/n
+ 1059  cd ceudsd/private/exercise_platform/neo4j/
+ 1060  sudo ./start_neo4j.sh 
+ 1061  sudo docker ps
+ 1062  sudo docker stop neo4j
+ 1063  sudo rm neo4j
+ 1064  sudo docker rm neo4j
+ 1065  pwd
+ 1066  cd ceudsd/seminar/
+ 1067  ls
+ 1068  cd ..
+ 1069  cd private/exercise_platform/neo4j/
+ 1070  sudo ./start_neo4j.sh 
+ 1071  sudo docker stop neo4j
+ 1072  sudo ./start_neo4j.sh 
+ 1073  sudo docker rm neo4j
+ 1074  sudo ./start_neo4j.sh 
+ 1075  sudo docker stop neo4j
+ 1076  sudo docker rm neo4j
+ 1077  sudo ./start_neo4j.sh 
+ 1078  sudo docker stop neo4j
+ 1079  sudo docker rm neo4j
+ 1080  sudo ./start_neo4j.sh 
+ 1081  sudo docker stop neo4j
+ 1082  sudo docker rm neo4j
+ 1083  sudo ./start_neo4j.sh 
+ 1084  sudo docker stop neo4j
+ 1085  sudo docker rm neo4j
+ 1086  sudo ./start_neo4j.sh 
+ 1087  sudo docker stop neo4j
+ 1088  sudo docker rm neo4j
+ 1089  sudo ./start_neo4j.sh 
+ 1090  bin/neo4j-admin memrec --database=panana.graphdb
+ 1091  sudo docker exec neo4j bin/neo4j-admin memrec --database=panana.graphdb
+ 1092  sudo docker stop neo4j
+ 1093  sudo docker rm neo4j
+ 1094  sudo ./start_neo4j.sh 
+ 1095  sudo docker stop neo4j
+ 1096  sudo docker rm neo4j
+ 1097  sudo ./start_neo4j.sh 
+ 1098  sudo docker exec nano /var/lib/neo4j.conf
+ 1099  sudo docker cp /var/lib/neo4j.conf /home/ubuntu/
+ 1100  sudo docker neo4j  cp /var/lib/neo4j.conf /home/ubuntu/
+ 1101  sudo docker cp neo4j:/var/lib/neo4j.conf /home/ubuntu/
+ 1102  sudo docker cp neo4j:/var/lib/neo4j/conf/neo4j.conf /home/ubuntu/
+ 1103  sudo docker stop neo4j
+ 1104  sudo docker rm neo4j
+ 1105  sudo ./start_neo4j.sh 
+ 1106  sudo docker stop neo4j
+ 1107  sudo docker rm neo4j
+ 1108  sudo ./start_neo4j.sh 
+ 1109  sudo docker cp neo4j:/var/lib/neo4j/conf/neo4j.conf /home/ubuntu/
+ 1110  sudo docker stop neo4j
+ 1111  sudo docker rm neo4j
+ 1112  sudo ./start_neo4j.sh 
+ 1113  pwd
+ 1114  cd ceudsd/
+ 1115  cd private/exercise_platform/solr/
+ 1116  ./start_solr.sh 
+ 1117  sudo ./start_solr.sh 
+ 1118  sudo docker stop solr
+ 1119  sudo docker rm solr
+ 1120  sudo ./start_solr.sh 
+ 1121  sudo docker stop solr
+ 1122  sudo docker rm solr
+ 1123  sudo ./start_solr.sh 
+ 1124  sudo docker stop solr
+ 1125  sudo docker rm solr
+ 1126  sudo ./start_solr.sh 
+ 1127  sudo docker stop solr
+ 1128  sudo docker rm solr
+ 1129  sudo ./start_solr.sh 
+ 1130  sudo docker stop solr
+ 1131  sudo docker rm solr
+ 1132  sudo ./start_solr.sh 
+ 1133  sudo ./populate_data.sh
+ 1134  sudo docker stop solr
+ 1135  sudo docker rm solr
+ 1136  sudo ./start_solr.sh 
+ 1137  sudo ./populate_data.sh
+ 1138  pws
+ 1139  pwd
+ 1140  sudo ./populate_data.sh
+ 1141  tail -10 flightdelays2.csv 
+ 1142  sudo ./populate_data.sh
+ 1143  ls
+ 1144  tail -10 flight
+ 1145  tail -10 flightdelays3.csv 
+ 1146  sudo docker stop solr
+ 1147  sudo docker rm solr
+ 1148  sudo ./start_solr.sh 
+ 1149  sudo ./populate_data.sh
+ 1150  sudo docker stop solr
+ 1151  sudo docker rm solr
+ 1152  sudo ./start_solr.sh 
+ 1153  sudo ./populate_data.sh
+ 1154  tail -10 flightdelays2.csv 
+ 1155  head -10 flightdelays2.csv 
+ 1156  sudo docker stop solr
+ 1157  sudo docker rm solr
+ 1158  sudo ./start_solr.sh 
+ 1159  tail -10 flightdelays2.csv 
+ 1160  tail -10 flightdelays.csv 
+ 1161  head -10 flightdelays.csv 
+ 1162  sudo ./populate_data.sh
+ 1163  sudo docker stop solr
+ 1164  sudo docker rm solr
+ 1165  sudo ./start_solr.sh 
+ 1166  sudo ./populate_data.sh
+ 1167  head -10 flightdelays.csv 
+ 1168  pwd
+ 1169  cd ceudsd/private/exercise_platform/solr/
+ 1170  head -10 flightdelays.csv 
+ 1171  ls
+ 1172  cd ceudsd/private/exercise_platform/solr/
+ 1173  sudo ./start_solr.sh 
+ 1174  sudo docker ps
+ 1175  sudo docker stop solr
+ 1176  sudo docker rm solr
+ 1177  sudo ./start_solr.sh 
+ 1178  sudo docker ps
+ 1179  pwd
+ 1180  bash
+ 1181  sudo docker ps
+ 1182  pws
+ 1183  pwd
+ 1184  cd ceudsd/private/
+ 1185  ls
+ 1186  cd exercise_platform/solr/
+ 1187  sudo ./populate_data.sh 
+ 1188  docker exec -it --user=solr solr bin/post
+ 1189  sudo docker exec -it --user=solr solr bin/post
+ 1190  sudo docker exec -it --user=solr solr bin/post ls
+ 1191  sudo docker exec -it --user=solr solr ls
+ 1192  df
+ 1193  sudo docker stop solr
+ 1194  sudo docker rm solr
+ 1195  df
+ 1196  ls
+ 1197  cd /
+ 1198  ls
+ 1199  cd home/
+ 1200  ls
+ 1201  df andras_somkuti/
+ 1202  cd
+ 1203  pwd
+ 1204  du /home/
+ 1205  du -h /home/
+ 1206  df
+ 1207  du -h /mysql/
+ 1208  du -h /
+ 1209  du -h /zeppelin/
+ 1210  du -h /usr/
+ 1211  du -h /opt/
+ 1212  du -h /var/
+ 1213  du -h /bin/
+ 1214  du -h /dev/
+ 1215  du -h /etc/
+ 1216  du -h /root/
+ 1217  du -csh /
+ 1218  sudo du -csh /
+ 1219  sudo du -csh /home/
+ 1220  sudo apt install ncdu
+ 1221  ncdu
+ 1222  pwd
+ 1223  cd /
+ 1224  ls
+ 1225  sudo ncdu
+ 1226  sudo docker stop solr
+ 1227  ls
+ 1228  sudo docker ps
+ 1229  sudo docker stop neo4j
+ 1230  sudo docker rm neo4j
+ 1231  df
+ 1232  sudo docker stop influxdb
+ 1233  sudo docker rm influxdb
+ 1234  df
+ 1235  sudo ncdu
+ 1236  cd /
+ 1237  ls
+ 1238  sudo ncdu
+ 1239  sudo docker volume ls
+ 1240  sudo docker volume inspect
+ 1241  docker volume prune
+ 1242  sudo docker volume prune
+ 1243  sudo ncdu
+ 1244  df
+ 1245  pwd
+ 1246  ls
+ 1247  cd ceudsd/private/exercise_platform/solr/
+ 1248  sudo ./start_solr.sh 
+ 1249  sudo ./populate_data.sh 
+ 1250  cd ceudsd/private/exercise_platform/influxdb/
+ 1251  sudo ./start_influx.sh 
+ 1252  df
+ 1253  sudo ./populate_data.sh 
+ 1254  pwd
+ 1255  cd ..
+ 1256  pwd
+ 1257  rm logs/
+ 1258  sudo rm logs
+ 1259  sudo rm -r logs
+ 1260  sudo docker ps
+ 1261  cd mongo/
+ 1262  ls
+ 1263  sudo ./start_mongo.sh 
+ 1264  sudo docker ps
+ 1265  ls
+ 1266  bash
+ 1267  cd /json
+ 1268  sudo cp json/listingsAndReviews.json /
+ 1269  sudo cp json/listingsAndReviews.json .
+ 1270  sudo rm -f json
+ 1271  sudo rm -r json
+ 1272  sudo docker ps
+ 1273  pwd
+ 1274  sudo ./populate_data.sh 
+ 1275  pwd
+ 1276  cd ..
+ 1277  ls
+ 1278  cd zeppelin/
+ 1279  ls
+ 1280  sudo rm -r logs2
+ 1281  sudo rm -r logs3
+ 1282  cd ..
+ 1283  ls
+ 1284  sudo rm -r notebook/
+ 1285  pwd
+ 1286  cd ceudsd/private/exercise_platform/
+ 1287  ls
+ 1288  cd neo4j/
+ 1289  sudo ./start_neo4j.sh 
+ 1290  nano data/dbms/auth 
+ 1291  sudo nano data/dbms/auth 
+ 1292  sudo docker stop neo4j
+ 1293  sudo docker rm neo4j
+ 1294  pwd
+ 1295  cd ceudsd
+ 1296  ls
+ 1297  cd private/exercise_platform/
+ 1298  cd neo4j/
+ 1299  ls
+ 1300  sudo ./start_neo4j.sh 
+ 1301  sudo docker stop neo4j
+ 1302  sudo docker rm neo4j
+ 1303  history > cmd.txt
